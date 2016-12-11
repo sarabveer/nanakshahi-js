@@ -1,4 +1,4 @@
-# Nanankshahi API
+# Nanakshahi API
 API to get Nanakshahi Calendar Dates
 
 ## Documentation

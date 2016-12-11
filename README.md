@@ -23,4 +23,4 @@ API to get Nanakshahi Calendar Dates
 
 ## Upcoming
 
-- Sikh Holidays
+- ~~Sikh Holidays~~ **(Added)**

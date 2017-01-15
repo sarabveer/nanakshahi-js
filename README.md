@@ -21,6 +21,10 @@ API to get Nanakshahi Calendar Dates
 |----------|---------------------------------------------------------------------------------------|
 | `:zone`  | Timezone<br>Use Timezones listed here: https://secure.php.net/manual/en/timezones.php |
 
+### Nanakshahi Sikh Holidays JSON List
+
+**URL**: `https://nanakshahiapi.sarabveer.me/holidays`
+
 ## Upcoming
 
 - ~~Sikh Holidays~~ **(Added)**

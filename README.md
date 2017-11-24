@@ -3,6 +3,10 @@ API to get Nanakshahi Calendar Dates
 
 Here is a [DEMO](https://nanakshahi.sarabveer.me/)
 
+## Setup
+
+Please read [this](https://gist.github.com/jamesvl/910325) to properly setup Apache/NGINX for PHP Routing
+
 ## Documentation
 
 ### Get Nanakshahi Date using Date

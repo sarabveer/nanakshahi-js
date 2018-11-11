@@ -1,0 +1,28 @@
+{
+  "name": "nanakshahi-js",
+  "version": "1.0.0",
+  "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarabveer/nanakshahi-api.git"
+  },
+  "author": {
+    "name": "Sarabveer Singh",
+    "email": "me@sarabveer.me",
+    "url": "https://sarabveer.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sarabveer/nanakshahi-api/issues"
+  },
+  "homepage": "https://github.com/Sarabveer/nanakshahi-api#readme",
+  "dependencies": {
+    "julian": "^0.2.0",
+    "lodash": "^4.17.11"
+  }
+}

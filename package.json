@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "build-docs": "jsdoc2md --template README.hbs lib/**/*.js > README.md",
-    "lint": "eslint ."
+    "build-docs": "jsdoc2md --template README.hbs lib/**/*.js > README.md &&  markdown-toc -i README.md ",
+    "lint": "eslint .",
+    "precommit": "npm run lint && npm run build-docs"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "jsdoc-to-markdown": "^4.0.1",
+    "markdown-toc": "^1.2.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   }

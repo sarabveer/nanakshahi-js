@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/Sarabveer/nanakshahi-api#readme",
   "dependencies": {
+    "gurmukhi-utils": "^2.0.3",
     "julian": "^0.2.0",
+    "leap-year": "^2.0.1",
     "lodash": "^4.17.11"
   }
 }

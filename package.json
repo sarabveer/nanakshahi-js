@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sarabveer/nanakshahi-api.git"
+    "url": "git+https://github.com/Sarabveer/nanakshahi-js.git"
   },
   "author": {
     "name": "Sarabveer Singh",
@@ -18,9 +19,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sarabveer/nanakshahi-api/issues"
+    "url": "https://github.com/Sarabveer/nanakshahi-js/issues"
   },
-  "homepage": "https://github.com/Sarabveer/nanakshahi-api#readme",
+  "homepage": "https://github.com/Sarabveer/nanakshahi-js#readme",
   "dependencies": {
     "gurmukhi-utils": "^2.0.3",
     "julian": "^0.2.0",
@@ -31,6 +32,11 @@
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",
     "babel-loader": "^8.0.4",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   }

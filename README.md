@@ -3,6 +3,7 @@
 # nanakshahi-js
 A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
+[![Travis (.org)](https://img.shields.io/travis/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://travis-ci.org/Sarabveer/nanakshahi-js)
 [![GitHub license](https://img.shields.io/github/license/Sarabveer/nanakshahi-js.svg?style=flat-square)](./LICENSE)
 
 ## Contents
@@ -72,8 +73,7 @@ linter suggestions as you type.
 When writing commit messages, please follow the **[seven rules](https://chris.beams.io/posts/git-commit/#seven-rules)**. 
 Markdown and HTML JSDoc documentation is generated automatically, on commit,
 however if you'd like to preview any changes to documentation, `npm run build-docs` will
-update `README.md` and the files in `docs/`. `README.md` should *not* be edited, instead
-apply modifications to `README.hbs`.
+update `README.md`. `README.md` should *not* be edited, instead apply modifications to `README.hbs`.
 
 The general workflow for contributing:
 

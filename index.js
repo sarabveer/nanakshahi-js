@@ -1,5 +1,5 @@
-const getBikramiLunar = require( './lib/getBikramiLunar' )
+const getBikramiDate = require( './lib/getBikramiDate' )
 
 module.exports = {
-  getBikramiLunar
+  getBikramiDate
 }

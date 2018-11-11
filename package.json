@@ -4,8 +4,7 @@
   "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,13 @@
+language: node_js
+sudo: false
+node_js:
+  - 10
+  - 9
+  - 8
+install:
+  - cd "nanakshahi-js"
+  - npm install
+script:
+  - npm run lint
+  - npm run build-docs
+  - npm run build

@@ -2,13 +2,16 @@
   "name": "nanakshahi",
   "version": "1.0.0",
   "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
-  "main": "index.js",
+  "main": "dist/index.min.js",
+  "unpkg": "dist/index.min.js",
+  "runkitExampleFilename": "example.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "build-docs": "jsdoc2md --template README.hbs lib/**/*.js > README.md &&  markdown-toc -i README.md ",
     "lint": "eslint .",
-    "precommit": "npm run lint && npm run build-docs"
+    "precommit": "npm run lint && npm run build-docs",
+    "release": "npm run precommit && npm run build && npm publish"
   },
   "repository": {
     "type": "git",

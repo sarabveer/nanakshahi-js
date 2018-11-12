@@ -15,8 +15,8 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 - [Usage](#usage)
 - [API](#api)
-  * [getBikramiDate(JavaScript) ⇒ Object](#getbikramidatejavascript-%E2%87%92-object)
-  * [getNanakshahiDate(JavaScript) ⇒ Object](#getnanakshahidatejavascript-%E2%87%92-object)
+  * [getBikramiDate(gregorianDate) ⇒ Object](#getbikramidategregoriandate-%E2%87%92-object)
+  * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
 - [Contributing](#contributing)
 
 <!-- tocstop -->
@@ -38,27 +38,27 @@ Want a demo?
 
 ## API
 
-### getBikramiDate(JavaScript) ⇒ <code>Object</code>
+### getBikramiDate(gregorianDate) ⇒ <code>Object</code>
 Converts given Gregorian Date to the corresponding date in the Bikrami Calendar
 
 **Returns**: <code>Object</code> - Bikrami Solar and Lunar Date  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| JavaScript | <code>Object</code> | Date() Object |
+| gregorianDate | <code>Object</code> | JavaScript Date() Object |
 
 **Example**  
 ```js
 getBikramiDate( new Date() )
 ```
-### getNanakshahiDate(JavaScript) ⇒ <code>Object</code>
+### getNanakshahiDate(gregorianDate) ⇒ <code>Object</code>
 Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar
 
 **Returns**: <code>Object</code> - Nanakshahi Date in English and Punjabi  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| JavaScript | <code>Object</code> | Date() Object |
+| gregorianDate | <code>Object</code> | JavaScript Date() Object |
 
 **Example**  
 ```js

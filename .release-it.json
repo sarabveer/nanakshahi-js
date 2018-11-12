@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "npm": {
+    "publish": true,
+    "access": "public"
+  },
+  "github": {
+    "release": true,
+    "assets": "dist/index.min.js"
+  }
+}

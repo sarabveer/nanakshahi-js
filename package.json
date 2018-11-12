@@ -10,9 +10,10 @@
     "build": "webpack --mode production",
     "build-docs": "jsdoc2md --template README.hbs lib/**/*.js > README.md &&  markdown-toc -i README.md ",
     "lint": "eslint .",
-    "precommit": "npm run lint && npm run build-docs",
-    "release": "npm run precommit && npm run build && npm publish"
+    "precommit": "npm run lint && npm run build-docs && git add README.md",
+    "release": "npm run lint && npm run build && npm run build && npm publish"
   },
+  "pre-commit": [ "precommit" ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sarabveer/nanakshahi-js.git"
@@ -44,6 +45,7 @@
     "eslint-plugin-react": "^7.11.1",
     "jsdoc-to-markdown": "^4.0.1",
     "markdown-toc": "^1.2.0",
+    "pre-commit": "^1.2.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   }

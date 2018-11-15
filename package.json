@@ -20,11 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/Sarabveer/nanakshahi-js.git"
   },
-  "author": {
-    "name": "Sarabveer Singh",
-    "email": "me@sarabveer.me",
-    "url": "https://sarabveer.me"
-  },
+  "author": "Sarabveer Singh <me@sarabveer.me> (https://sarabveer.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Sarabveer/nanakshahi-js/issues"
@@ -51,5 +47,21 @@
     "release-it": "^7.6.3",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
+  },
+  "keywords": [
+    "nanakshahi",
+    "sikhi",
+    "sikhism",
+    "sikh",
+    "sikh-holidays",
+    "nanakshahi-api",
+    "bikrami",
+    "vikrami",
+    "gurpurab",
+    "gurpurabs",
+    "gurmukhi"
+  ],
+  "directories": {
+    "lib": "lib"
   }
 }

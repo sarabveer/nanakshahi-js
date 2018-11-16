@@ -16,6 +16,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 - [Usage](#usage)
 - [API](#api)
   * [getBikramiDate(gregorianDate) ⇒ Object](#getbikramidategregoriandate-%E2%87%92-object)
+  * [getGregorianFromBikrami(year, year, tithi, [paksh]) ⇒ Object](#getgregorianfrombikramiyear-year-tithi-paksh-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
 - [Contributing](#contributing)
 
@@ -50,6 +51,22 @@ Converts given Gregorian Date to the corresponding date in the Bikrami Calendar
 **Example**  
 ```js
 getBikramiDate( new Date() )
+```
+### getGregorianFromBikrami(year, year, tithi, [paksh]) ⇒ <code>Object</code>
+Converts given Bikrami Lunar Date to the corresponding date in the Gregorian Calendar
+
+**Returns**: <code>Object</code> - Gregorian Date  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| year | <code>number</code> |  | Bikrami Year |
+| year | <code>month</code> |  | Bikrami Month |
+| tithi | <code>tithi</code> |  | Bikrami Tithi |
+| [paksh] | <code>boolean</code> | <code>false</code> | Lunar Paksh. Default is Sudi, true for Vadi. |
+
+**Example**  
+```js
+getGregorianFromBikrami( 1723, 9, 7 )
 ```
 ### getNanakshahiDate(gregorianDate) ⇒ <code>Object</code>
 Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar

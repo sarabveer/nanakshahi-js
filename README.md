@@ -16,7 +16,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 - [Usage](#usage)
 - [API](#api)
   * [getBikramiDate(gregorianDate) ⇒ Object](#getbikramidategregoriandate-%E2%87%92-object)
-  * [getGregorianFromBikrami(year, year, tithi, paksh) ⇒ Object](#getgregorianfrombikramiyear-year-tithi-paksh-%E2%87%92-object)
+  * [getGregorianFromBikrami(year, year, tithi, [paksh]) ⇒ Object](#getgregorianfrombikramiyear-year-tithi-paksh-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
 - [Contributing](#contributing)
 
@@ -52,7 +52,7 @@ Converts given Gregorian Date to the corresponding date in the Bikrami Calendar
 ```js
 getBikramiDate( new Date() )
 ```
-### getGregorianFromBikrami(year, year, tithi, paksh) ⇒ <code>Object</code>
+### getGregorianFromBikrami(year, year, tithi, [paksh]) ⇒ <code>Object</code>
 Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or minus 1 day)
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -62,7 +62,7 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 | year | <code>number</code> |  | Bikrami Year |
 | year | <code>number</code> |  | Bikrami Month |
 | tithi | <code>number</code> |  | Bikrami Tithi |
-| paksh | <code>boolean</code> | <code>false</code> | Lunar Paksh. Default is Sudi, `true` for Vadi. |
+| [paksh] | <code>boolean</code> | <code>false</code> | Lunar Paksh. Default is Sudi, `true` for Vadi. |
 
 **Example**  
 ```js

@@ -3,11 +3,12 @@
 # nanakshahi-js
 A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
+[![npm](https://img.shields.io/npm/v/nanakshahi.svg?style=flat-square)](https://www.npmjs.com/package/nanakshahi)
 [![Travis (.org)](https://img.shields.io/travis/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://travis-ci.org/Sarabveer/nanakshahi-js)
 [![GitHub license](https://img.shields.io/github/license/Sarabveer/nanakshahi-js.svg?style=flat-square)](./LICENSE)
-[![npm](https://img.shields.io/npm/v/nanakshahi.svg?style=flat-square)](https://www.npmjs.com/package/nanakshahi)
 [![GitHub issues](https://img.shields.io/github/issues/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/pulls)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/nanakshahi/badge)](https://www.jsdelivr.com/package/npm/nanakshahi)
 
 ## Contents
 
@@ -36,6 +37,17 @@ getNanakshahiDate( date )
 getHolidaysForMonth( 1 )
 getMovableHoliday( 'gurunanak' )
 getBikramiDate( date )
+getGregorianFromBikrami( 1723, 10, 7 )
+```
+
+Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
+```
+<script src="https://unpkg.com/nanakshahi"></script>
+```
+
+Or via [jsDelivr](https://www.jsdelivr.com/package/npm/nanakshahi)
+```
+<script src="https://cdn.jsdelivr.net/npm/nanakshahi/dist/index.min.js"></script>
 ```
 
 Want a demo?  
@@ -70,7 +82,7 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 
 **Example**  
 ```js
-getGregorianFromBikrami( 1723, 9, 7 )
+getGregorianFromBikrami( 1723, 10, 7 )
 ```
 ### getHolidaysForMonth(month) ⇒ <code>Object</code>
 Returns all Gurpurabs and Holidays for a Nanakshahi Month

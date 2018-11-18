@@ -1,11 +1,13 @@
 const getNanakshahiDate = require( './lib/getNanakshahiDate' )
-const getMoveableHoliday = require( './lib/getMoveableHoliday' )
+const getHolidaysForMonth = require( './lib/getHolidaysForMonth' )
+const getMovableHoliday = require( './lib/getMovableHoliday' )
 const getBikramiDate = require( './lib/getBikramiDate' )
 const getGregorianFromBikrami = require( './lib/getGregorianFromBikrami' )
 
 module.exports = {
   getNanakshahiDate,
-  getMoveableHoliday,
+  getHolidaysForMonth,
+  getMovableHoliday,
   getBikramiDate,
   getGregorianFromBikrami,
 }

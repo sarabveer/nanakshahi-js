@@ -16,11 +16,13 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 The library can be imported into Node as below:
 ```javascript
-const { getNanakshahiDate, getBikramiDate } = require('nanakshahi')
+const { getNanakshahiDate, getHolidaysForMonth, getMovableHoliday, getBikramiDate } = require( 'nanakshahi' )
 
 const date = new Date()
 
 getNanakshahiDate( date )
+getHolidaysForMonth( 1 )
+getMovableHoliday( 'gurunanak' )
 getBikramiDate( date )
 ```
 

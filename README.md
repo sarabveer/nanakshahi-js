@@ -17,7 +17,8 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 - [API](#api)
   * [getBikramiDate(gregorianDate) ⇒ Object](#getbikramidategregoriandate-%E2%87%92-object)
   * [getGregorianFromBikrami(year, year, tithi, [paksh]) ⇒ Object](#getgregorianfrombikramiyear-year-tithi-paksh-%E2%87%92-object)
-  * [getMoveableHoliday(holiday, [year]) ⇒ Object](#getmoveableholidayholiday-year-%E2%87%92-object)
+  * [getHolidaysForMonth(month) ⇒ Object](#getholidaysformonthmonth-%E2%87%92-object)
+  * [getMovableHoliday(holiday, [year]) ⇒ Object](#getmovableholidayholiday-year-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
 - [Contributing](#contributing)
 
@@ -27,11 +28,13 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 The library can be imported into Node as below:
 ```javascript
-const { getNanakshahiDate, getBikramiDate } = require('nanakshahi')
+const { getNanakshahiDate, getHolidaysForMonth, getMovableHoliday, getBikramiDate } = require( 'nanakshahi' )
 
 const date = new Date()
 
 getNanakshahiDate( date )
+getHolidaysForMonth( 1 )
+getMovableHoliday( 'gurunanak' )
 getBikramiDate( date )
 ```
 
@@ -69,19 +72,32 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 ```js
 getGregorianFromBikrami( 1723, 9, 7 )
 ```
-### getMoveableHoliday(holiday, [year]) ⇒ <code>Object</code>
-Returns Gregorian Date of Movable Holiday
+### getHolidaysForMonth(month) ⇒ <code>Object</code>
+Returns all Gurpurabs and Holidays for a Nanakshahi Month
 
-**Returns**: <code>Object</code> - Holiday Date with Data  
+**Returns**: <code>Object</code> - Holidays for the month with Date and name in English and Punjabi  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| holiday | <code>string</code> | Holiday which date will be calculated. Check `movableHolidays.json`. |
+| month | <code>number</code> | Nanakshahi Month, 1-12 |
+
+**Example**  
+```js
+getHolidaysForMonth( 1 )
+```
+### getMovableHoliday(holiday, [year]) ⇒ <code>Object</code>
+Returns Gregorian Date of Movable HolidayMovable Holidays List:- `gurunanak` Parkash Guru Nanak Dev Ji- `bandishhorr` Bandi Shhorr Divas / Diwali- `holla` Holla Mahalla- `kabeer` Birthday Bhagat Kabeer Ji- `ravidaas` Birthday Bhagat Ravidaas Ji- `naamdev` Birthday Bhagat Naamdev Ji
+
+**Returns**: <code>Object</code> - Holiday Date with Name in English and Punjabi  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| holiday | <code>string</code> | Holiday which date will be calculated. |
 | [year] | <code>number</code> | Gregorian year, default is current year. |
 
 **Example**  
 ```js
-getMoveableHoliday( 'gurunanak' )
+getMovableHoliday( 'gurunanak' )
 ```
 ### getNanakshahiDate(gregorianDate) ⇒ <code>Object</code>
 Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar

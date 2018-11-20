@@ -7,7 +7,8 @@
     },
     "name":{
       "en":"Birthday Bhagat Ravidaas Ji",
-      "pa":"ਜਨਮ ਭਗਤ ਰਵਿਦਾਸ ਜੀ"
+      "pa":"ਜਨਮ ਭਗਤ ਰਵਿਦਾਸ ਜੀ",
+      "type":"historical"
     }
   },
   "holla":{
@@ -18,7 +19,8 @@
     },
     "name":{
       "en":"Holla Mohalla",
-      "pa":"ਹੋਲਾ ਮਹੱਲਾ"
+      "pa":"ਹੋਲਾ ਮਹੱਲਾ",
+      "type":"historical"
     }
   },
   "kabeer":{
@@ -29,7 +31,8 @@
     },
     "name":{
       "en":"Birthday Bhagat Kabeer Ji",
-      "pa":"ਜਨਮ ਭਗਭ ਕਬੀਰ ਜੀ"
+      "pa":"ਜਨਮ ਭਗਭ ਕਬੀਰ ਜੀ",
+      "type":"historical"
     }
   },
   "bandishhorr":{
@@ -39,8 +42,9 @@
       "paksh":"Vadi"
     },
     "name":{
-      "en":"Bandi Shhorr Divas",
-      "pa":"ਬੰਦੀ ਛੋੜ ਦਿਵਸ"
+      "en":"Bandi Shhorr Divas (Diwali)",
+      "pa":"ਬੰਦੀ ਛੋੜ ਦਿਵਸ (ਦੀਵਾਲੀ)",
+      "type":"historical"
     }
   },
   "naamdev":{
@@ -51,7 +55,8 @@
     },
     "name":{
       "en":"Birthday Bhagat Naamdev Ji",
-      "pa":"ਜਨਮ ਭਗਤ ਨਾਮਦੇਵ ਜੀ"
+      "pa":"ਜਨਮ ਭਗਤ ਨਾਮਦੇਵ ਜੀ",
+      "type":"historical"
     }
   },
   "gurunanak":{
@@ -62,7 +67,8 @@
     },
     "name":{
       "en":"Parkash Guru Nanak Dev Ji",
-      "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ"
+      "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
+      "type":"gurpurab"
     }
   }
 }

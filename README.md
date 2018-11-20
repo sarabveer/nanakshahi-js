@@ -18,6 +18,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 - [API](#api)
   * [getBikramiDate(gregorianDate) ⇒ Object](#getbikramidategregoriandate-%E2%87%92-object)
   * [getGregorianFromBikrami(year, year, tithi, [paksh]) ⇒ Object](#getgregorianfrombikramiyear-year-tithi-paksh-%E2%87%92-object)
+  * [getHolidaysForDay(gregorianDate) ⇒ Array](#getholidaysfordaygregoriandate-%E2%87%92-array)
   * [getHolidaysForMonth(month) ⇒ Object](#getholidaysformonthmonth-%E2%87%92-object)
   * [getMovableHoliday(holiday, [year]) ⇒ Object](#getmovableholidayholiday-year-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
@@ -34,6 +35,7 @@ const { getNanakshahiDate, getHolidaysForMonth, getMovableHoliday, getBikramiDat
 const date = new Date()
 
 getNanakshahiDate( date )
+getHolidaysForDay( date )
 getHolidaysForMonth( 1 )
 getMovableHoliday( 'gurunanak' )
 getBikramiDate( date )
@@ -83,6 +85,19 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 **Example**  
 ```js
 getGregorianFromBikrami( 1723, 10, 7 )
+```
+### getHolidaysForDay(gregorianDate) ⇒ <code>Array</code>
+Returns all Gurpurabs and Holidays for a Date
+
+**Returns**: <code>Array</code> - Holidays for the day with Date and name in English and Punjabi  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| gregorianDate | <code>Object</code> | JavaScript Date() Object |
+
+**Example**  
+```js
+getHolidaysForDay( new Date() )
 ```
 ### getHolidaysForMonth(month) ⇒ <code>Object</code>
 Returns all Gurpurabs and Holidays for a Nanakshahi Month

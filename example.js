@@ -1,10 +1,10 @@
-const { getNanakshahiDate, getHolidaysForMonth, getMovableHoliday, getBikramiDate, getGregorianFromBikrami } = require('nanakshahi')
+const n = require('nanakshahi')
 
 const date = new Date()
 
-console.log( getNanakshahiDate( date ) )
-console.log( getHolidaysForDay( date ) )
-console.log( getHolidaysForMonth( 1 ) )
-console.log( getMovableHoliday( 'gurunanak' ) )
-console.log( getBikramiDate( date ) )
-getGregorianFromBikrami( 1723, 10, 7 )
+console.log( n.getNanakshahiDate( date ) )
+console.log( n.getHolidaysForDay( date ) )
+console.log( n.getHolidaysForMonth( 1 ) )
+console.log( n.getMovableHoliday( 'gurunanak' ) )
+console.log( n.getBikramiDate( date ) )
+console.log( n.getGregorianFromBikrami( 1723, 10, 7 ) )

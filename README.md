@@ -16,7 +16,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 - [Usage](#usage)
 - [API](#api)
-  * [getBikramiDate(gregorianDate) ⇒ Object](#getbikramidategregoriandate-%E2%87%92-object)
+  * [getBikramiDate(gregorianDate, [isJulian]) ⇒ Object](#getbikramidategregoriandate-isjulian-%E2%87%92-object)
   * [getGregorianFromBikrami(year, year, tithi, [paksh]) ⇒ Object](#getgregorianfrombikramiyear-year-tithi-paksh-%E2%87%92-object)
   * [getHolidaysForDay(gregorianDate) ⇒ Array](#getholidaysfordaygregoriandate-%E2%87%92-array)
   * [getHolidaysForMonth(month) ⇒ Object](#getholidaysformonthmonth-%E2%87%92-object)
@@ -57,14 +57,15 @@ Want a demo?
 
 ## API
 
-### getBikramiDate(gregorianDate) ⇒ <code>Object</code>
+### getBikramiDate(gregorianDate, [isJulian]) ⇒ <code>Object</code>
 Converts given Gregorian Date to the corresponding date in the Bikrami Calendar
 
 **Returns**: <code>Object</code> - Bikrami Solar and Lunar Date  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| gregorianDate | <code>Object</code> | JavaScript Date() Object |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| gregorianDate | <code>Object</code> |  | JavaScript Date() Object |
+| [isJulian] | <code>boolean</code> | <code>false</code> | Set to true if entered date is in Julian Calendar |
 
 **Example**  
 ```js

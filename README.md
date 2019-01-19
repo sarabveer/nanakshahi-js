@@ -28,6 +28,11 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 ## Usage
 
+Install the library via NPM:
+```
+npm install nanakshahi
+```
+
 The library can be imported into Node as below:
 ```javascript
 const n = require('nanakshahi')
@@ -127,9 +132,9 @@ Converts given Gregorian Date to the corresponding date in the Nanakshahi Calend
 getNanakshahiDate( new Date() )
 ```
 ### getPanchang(date, [isJulian]) ⇒ <code>Object</code>
-Converts given Gregorian Date to the corresponding date in the Bikrami Calendar
+Returns given date to the corresponding date in the Panchang
 
-**Returns**: <code>Object</code> - Bikrami Solar and Lunar Date  
+**Returns**: <code>Object</code> - Panchang (Includes Lunar and Solar Date)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

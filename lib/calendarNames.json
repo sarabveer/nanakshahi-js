@@ -1,6 +1,6 @@
 {
-  "months":{
-    "pa":[
+  "months": {
+    "pa": [
       "ਚੇਤ",
       "ਵੈਸਾਖ",
       "ਜੇਠ",
@@ -14,7 +14,7 @@
       "ਮਾਘ",
       "ਫੱਗਣ"
     ],
-    "en":[
+    "en": [
       "Chet",
       "Vaisakh",
       "Jeth",
@@ -29,8 +29,8 @@
       "Phagun"
     ]
   },
-  "days":{
-    "pa":[
+  "days": {
+    "pa": [
       "ਐਤਵਾਰ",
       "ਸੋਮਵਾਰ",
       "ਮੰਗਲਵਾਰ",
@@ -39,7 +39,7 @@
       "ਸ਼ੁੱਕਰਵਾਰ",
       "ਸ਼ਨੀਵਾਰ"
     ],
-    "en":[
+    "en": [
       "Aitvaar",
       "Somvaar",
       "Mangalvaar",
@@ -49,131 +49,197 @@
       "Shanivaar"
     ]
   },
-  "paksh":{
-    "sudi":{
-      "pa":"ਸੁਦੀ",
-      "en":"Sudi"
+  "paksh": {
+    "sudi": {
+      "pa": "ਸੁਦੀ",
+      "en": "Sudi"
     },
-    "vadi":{
-      "pa":"ਵਦੀ",
-      "en":"Vadi"
+    "vadi": {
+      "pa": "ਵਦੀ",
+      "en": "Vadi"
     }
   },
-  "nakshatras":[
+  "tithi": [
     {
-      "pa":"ਅਸ਼ਵਨੀ",
-      "en":"Asvini"
+      "pa": "ਏਕਮ",
+      "en": "Ekam"
     },
     {
-      "pa":"ਭਰਣੀ",
-      "en":"Bharani"
+      "pa": "ਦੁਤੀਆ",
+      "en": "Dutiya"
     },
     {
-      "pa":"ਕ੍ਰਿਤਿਕਾ",
-      "en":"Krittika"
+      "pa": "ਤ੍ਰਿਤੀਆ",
+      "en": "Tritiya"
     },
     {
-      "pa":"ਰੋਹਿਣੀ",
-      "en":"Rohini"
+      "pa": "ਚਉਥ",
+      "en": "Chauth"
     },
     {
-      "pa":"ਮ੍ਰਿਗਸ਼ਿਰ",
-      "en":"Mrigasiras"
+      "pa": "ਪੰਚਮੀ",
+      "en": "Panchmi"
     },
     {
-      "pa":"ਆਰਦ੍ਰਾ",
-      "en":"Ardra"
+      "pa": "ਖਸ਼ਟੀ",
+      "en": "Khashti"
     },
     {
-      "pa":"ਪੁਨਰਵਸੁ",
-      "en":"Punarvasu"
+      "pa": "ਸਪਤਮੀ",
+      "en": "Saptami"
     },
     {
-      "pa":"ਪੁੱਖ",
-      "en":"Pushya"
+      "pa": "ਅਸ਼ਟਮੀ",
+      "en": "Ashtami"
     },
     {
-      "pa":"ਅਸ਼ਲੇਸ਼ਾ",
-      "en":"Aslesha"
+      "pa": "ਨਉਮੀ",
+      "en": "Naumi"
     },
     {
-      "pa":"ਮਘਾ",
-      "en":"Magha"
+      "pa": "ਦਸਮੀ",
+      "en": "Dasami"
     },
     {
-      "pa":"ਪੂਰਵਾ ਫਾਲਗੁਣੀ",
-      "en":"Purva Phalguni"
+      "pa": "ਏਕਾਦਸ਼ੀ",
+      "en": "Ekadashi"
     },
     {
-      "pa":"ਉਤਰਾ ਫਾਲਗੁਣੀ",
-      "en":"Uttara Phalguni"
+      "pa": "ਦੁਆਦਸ਼ੀ",
+      "en": "Duadashi"
     },
     {
-      "pa":"ਹਸਤ",
-      "en":"Hasta"
+      "pa": "ਤ੍ਰਉਦਸ਼ੀ",
+      "en": "Traudashi"
     },
     {
-      "pa":"ਚਿਤਰਾ",
-      "en":"Chitra"
+      "pa": "ਚਉਦਸ਼",
+      "en": "Chaudash"
     },
     {
-      "pa":"ਸਵਾਤੀ",
-      "en":"Svati"
+      "pa": "ਪੂਰਨਮਾ",
+      "en": "Purnima"
     },
     {
-      "pa":"ਵਿਸ਼ਾਖਾ",
-      "en":"Visakha"
-    },
-    {
-      "pa":"ਅਨੁਰਾਧਾ",
-      "en":"Anuradha"
-    },
-    {
-      "pa":"ਜੇਸ਼ਠਾ",
-      "en":"Jyestha"
-    },
-    {
-      "pa":"ਮੂਲਾ",
-      "en":"Mula"
-    },
-    {
-      "pa":"ਪੂਰਵਾਖਾੜਾ",
-      "en":"PurvAshadha"
-    },
-    {
-      "pa":"ਉਤਰਾਖਾੜਾ",
-      "en":"UttarAshadha"
-    },
-    {
-      "pa":"ਸ਼ਰਵਣ",
-      "en":"Sravana"
-    },
-    {
-      "pa":"ਧਨਿਸ਼ਟਾ",
-      "en":"Dhanistha"
-    },
-    {
-      "pa":"ਸ਼ਤਭਿਸ਼ਾ",
-      "en":"Satabhisaj"
-    },
-    {
-      "pa":"ਪੂਰਵਾ ਭਾਦ੍ਰਪਦ",
-      "en":"Purva Bhadrapada"
-    },
-    {
-      "pa":"ਉਤਰਾ ਭਾਦ੍ਰਪਦ",
-      "en":"Uttara Bhadrapada"
-    },
-    {
-      "pa":"ਰੇਵਤੀ",
-      "en":"Revati"
-    },
-    {
-      "pa":"ਅਸ਼ਵਨੀ",
-      "en":"Asvini"
+      "pa": "ਅਮਾਵਸਿਆ",
+      "en": "Amavasya"
     }
   ],
-  "numbers":[
+  "nakshatras": [
+    {
+      "pa": "ਅਸ਼ਵਨੀ",
+      "en": "Asvini"
+    },
+    {
+      "pa": "ਭਰਣੀ",
+      "en": "Bharani"
+    },
+    {
+      "pa": "ਕ੍ਰਿਤਿਕਾ",
+      "en": "Krittika"
+    },
+    {
+      "pa": "ਰੋਹਿਣੀ",
+      "en": "Rohini"
+    },
+    {
+      "pa": "ਮ੍ਰਿਗਸ਼ਿਰ",
+      "en": "Mrigasiras"
+    },
+    {
+      "pa": "ਆਰਦ੍ਰਾ",
+      "en": "Ardra"
+    },
+    {
+      "pa": "ਪੁਨਰਵਸੁ",
+      "en": "Punarvasu"
+    },
+    {
+      "pa": "ਪੁੱਖ",
+      "en": "Pushya"
+    },
+    {
+      "pa": "ਅਸ਼ਲੇਸ਼ਾ",
+      "en": "Aslesha"
+    },
+    {
+      "pa": "ਮਘਾ",
+      "en": "Magha"
+    },
+    {
+      "pa": "ਪੂਰਵਾ ਫਾਲਗੁਣੀ",
+      "en": "Purva Phalguni"
+    },
+    {
+      "pa": "ਉਤਰਾ ਫਾਲਗੁਣੀ",
+      "en": "Uttara Phalguni"
+    },
+    {
+      "pa": "ਹਸਤ",
+      "en": "Hasta"
+    },
+    {
+      "pa": "ਚਿਤਰਾ",
+      "en": "Chitra"
+    },
+    {
+      "pa": "ਸਵਾਤੀ",
+      "en": "Svati"
+    },
+    {
+      "pa": "ਵਿਸ਼ਾਖਾ",
+      "en": "Visakha"
+    },
+    {
+      "pa": "ਅਨੁਰਾਧਾ",
+      "en": "Anuradha"
+    },
+    {
+      "pa": "ਜੇਸ਼ਠਾ",
+      "en": "Jyestha"
+    },
+    {
+      "pa": "ਮੂਲਾ",
+      "en": "Mula"
+    },
+    {
+      "pa": "ਪੂਰਵਾਖਾੜਾ",
+      "en": "PurvAshadha"
+    },
+    {
+      "pa": "ਉਤਰਾਖਾੜਾ",
+      "en": "UttarAshadha"
+    },
+    {
+      "pa": "ਸ਼ਰਵਣ",
+      "en": "Sravana"
+    },
+    {
+      "pa": "ਧਨਿਸ਼ਟਾ",
+      "en": "Dhanistha"
+    },
+    {
+      "pa": "ਸ਼ਤਭਿਸ਼ਾ",
+      "en": "Satabhisaj"
+    },
+    {
+      "pa": "ਪੂਰਵਾ ਭਾਦ੍ਰਪਦ",
+      "en": "Purva Bhadrapada"
+    },
+    {
+      "pa": "ਉਤਰਾ ਭਾਦ੍ਰਪਦ",
+      "en": "Uttara Bhadrapada"
+    },
+    {
+      "pa": "ਰੇਵਤੀ",
+      "en": "Revati"
+    },
+    {
+      "pa": "ਅਸ਼ਵਨੀ",
+      "en": "Asvini"
+    }
+  ],
+  "numbers": [
     "੦",
     "੧",
     "੨",

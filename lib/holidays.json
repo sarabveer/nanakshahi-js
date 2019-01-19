@@ -14,8 +14,8 @@
           "type":"calendar"
         },
         {
-          "pa":"ਸੰਗਰਾਂਦ ਚੇਤ",
-          "en":"Sangrand Chet",
+          "pa":"ਅਰੰਭ ਚੇਤ",
+          "en":"Beginning of Chet",
           "type":"calendar"
         },
         {
@@ -94,7 +94,7 @@
       },
       "holidays":[
         {
-          "pa":"੧੯੭੮ ਵੈਸਾਖੀ ਅੰਮ੍ਰਿਤਸਰ ਸ਼ਹੀਦੀ ਸਾਕਾ",
+          "pa":"੧੯੭੮ ਵਿਸਾਖੀ ਅੰਮ੍ਰਿਤਸਰ ਸ਼ਹੀਦੀ ਸਾਕਾ",
           "en":"1978 Vaisakhi Amritsar Shaheedi Saka",
           "type":"historical"
         }
@@ -111,12 +111,12 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਵੈਸਾਖ",
-          "en":"Sangrand Vaisakh",
+          "pa":"ਅਰੰਭ ਵੈਸਾਖ",
+          "en":"Beginning of Vaisakh",
           "type":"calendar"
         },
         {
-          "pa":"ਵੈਸਾਖੀ",
+          "pa":"ਵਿਸਾਖੀ",
           "en":"Vaisakhi",
           "type":"calendar"
         },
@@ -233,8 +233,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਜੇਠ",
-          "en":"Sangrand Jeth",
+          "pa":"ਅਰੰਭ ਜੇਠ",
+          "en":"Beginning of Jeth",
           "type":"calendar"
         }
       ]
@@ -340,8 +340,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਹਾੜ",
-          "en":"Sangrand Harh",
+          "pa":"ਅਰੰਭ ਹਾੜ",
+          "en":"Beginning of Harh",
           "type":"calendar"
         }
       ]
@@ -447,8 +447,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਸਾਵਣ",
-          "en":"Sangrand Savan",
+          "pa":"ਅਰੰਭ ਸਾਵਣ",
+          "en":"Beginning of Savan",
           "type":"calendar"
         },
         {
@@ -514,8 +514,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਭਾਦੋਂ",
-          "en":"Sangrand Bhadon",
+          "pa":"ਅਰੰਭ ਭਾਦੋਂ",
+          "en":"Beginning of Bhadon",
           "type":"calendar"
         }
       ]
@@ -576,8 +576,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਅੱਸੂ",
-          "en":"Sangrand Assu",
+          "pa":"ਅਰੰਭ ਅੱਸੂ",
+          "en":"Beginning of Assu",
           "type":"calendar"
         }
       ]
@@ -683,8 +683,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਕੱਤਕ",
-          "en":"Sangrand Katak",
+          "pa":"ਅਰੰਭ ਕੱਤਕ",
+          "en":"Beginning of Katak",
           "type":"calendar"
         }
       ]
@@ -805,8 +805,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਮੱਘਰ",
-          "en":"Sangrand Maghar",
+          "pa":"ਅਰੰਭ ਮੱਘਰ",
+          "en":"Beginning of Maghar",
           "type":"calendar"
         }
       ]
@@ -892,8 +892,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਪੋਹ",
-          "en":"Sangrand Poh",
+          "pa":"ਅਰੰਭ ਪੋਹ",
+          "en":"Beginning of Poh",
           "type":"calendar"
         }
       ]
@@ -999,8 +999,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਮਾਘ",
-          "en":"Sangrand Magh",
+          "pa":"ਅਰੰਭ ਮਾਘ",
+          "en":"Beginning of Magh",
           "type":"calendar"
         },
         {
@@ -1116,8 +1116,8 @@
       },
       "holidays":[
         {
-          "pa":"ਸੰਗਰਾਂਦ ਫੱਗਣ",
-          "en":"Sangrand Phagun",
+          "pa":"ਅਰੰਭ ਫੱਗਣ",
+          "en":"Beginning of Phagun",
           "type":"calendar"
         }
       ]

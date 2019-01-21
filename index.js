@@ -5,6 +5,7 @@ const getMovableHoliday = require( './lib/getMovableHoliday' )
 const getPanchang = require( './lib/getPanchang' )
 const getGregorianFromLunarDate = require( './lib/getGregorianFromLunarDate' )
 const getTithi = require( './lib/getTithi' )
+const getTimings = require( './lib/getTimings' )
 
 module.exports = {
   getNanakshahiDate,
@@ -14,4 +15,5 @@ module.exports = {
   getPanchang,
   getGregorianFromLunarDate,
   getTithi,
+  getTimings,
 }

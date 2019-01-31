@@ -22,7 +22,6 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getMovableHoliday(holiday, [year]) ⇒ Object](#getmovableholidayholiday-year-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
   * [getPanchang(date, [isJulian]) ⇒ Object](#getpanchangdate-isjulian-%E2%87%92-object)
-  * [getTimings(date, [timezone], [latitude], [longitude]) ⇒ Object](#gettimingsdate-timezone-latitude-longitude-%E2%87%92-object)
   * [getTithi(date) ⇒ Object](#gettithidate-%E2%87%92-object)
 - [Contributing](#contributing)
 
@@ -147,22 +146,6 @@ Returns given date to the corresponding date in the Panchang
 **Example**  
 ```js
 getPanchang( new Date() )
-```
-### getTimings(date, [timezone], [latitude], [longitude]) ⇒ <code>Object</code>
-Get Sun and Moon times for location
-
-**Returns**: <code>Object</code> - Sun and Moon times  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| date | <code>Object</code> |  | JavaScript Date() Object |
-| [timezone] | <code>string</code> | <code>&quot;Asia/Kolkata&quot;</code> | Timezone of Location. Default is IST. |
-| [latitude] | <code>number</code> | <code>31.6</code> | Latitude of Location. Default is Amritsar. |
-| [longitude] | <code>number</code> | <code>74.9</code> | Longitude of Location. Default is Amritsar. |
-
-**Example**  
-```js
-getTimings( new Date() )
 ```
 ### getTithi(date) ⇒ <code>Object</code>
 Get Tithi and other Moon/Lunar Info

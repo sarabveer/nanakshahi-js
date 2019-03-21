@@ -1,6 +1,6 @@
 {
   "name": "nanakshahi",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
   "main": "dist/index.min.js",
   "unpkg": "dist/index.min.js",
@@ -40,22 +40,18 @@
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.11.1",
     "jsdoc-to-markdown": "^4.0.1",
     "markdown-toc": "^1.2.0",
     "pre-commit": "^1.2.2",
-    "release-it": "^10.0.0",
+    "release-it": "^10.3.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   },
   "release-it": {
     "scripts": {
       "beforeStage": "npm run build"
-    },
-    "npm": {
-      "publish": true,
-      "access": "public"
     },
     "github": {
       "release": true,

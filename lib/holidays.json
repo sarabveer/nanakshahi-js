@@ -1,12 +1,7 @@
 {
   "1":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":3,
-          "day":14
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਬ ਨਵਾਂ ਸਾਲ",
@@ -26,12 +21,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":3,
-          "day":15
-        }
-      },
+      "date":2,
       "holidays":[
         {
           "pa":"ਦਿੱਲੀ ਫ਼ਤਹਿ ਭਾਈ ਬਘੇਲ ਸਿੰਘ",
@@ -41,12 +31,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":3,
-          "day":19
-        }
-      },
+      "date":6,
       "holidays":[
         {
           "pa":"ਜੋਤੀ-ਜੋਤਿ ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
@@ -56,12 +41,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":3,
-          "day":25
-        }
-      },
+      "date":12,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਭਾਈ ਸੁਬੇਗ ਸਿੰਘ ਅਤੇ ਭਾਈ ਸ਼ਾਹਬਾਜ਼ ਸਿੰਘ ਜੀ",
@@ -71,12 +51,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":4,
-          "day":9
-        }
-      },
+      "date":27,
       "holidays":[
         {
           "pa":"ਜਨਮ ਸਾਹਿਬਜ਼ਾਦਾ ਬਾਬਾ ਜੁਝਾਰ ਸਿੰਘ ਜੀ",
@@ -86,12 +61,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":4,
-          "day":13
-        }
-      },
+      "date":31,
       "holidays":[
         {
           "pa":"੧੯੭੮ ਵਿਸਾਖੀ ਅੰਮ੍ਰਿਤਸਰ ਸ਼ਹੀਦੀ ਸਾਕਾ",
@@ -103,12 +73,7 @@
   ],
   "2":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":4,
-          "day":14
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਵੈਸਾਖ",
@@ -128,12 +93,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":4,
-          "day":16
-        }
-      },
+      "date":3,
       "holidays":[
         {
           "pa":"ਗੁਰਗੱਦੀ ਗੁਰੂ ਅਮਰ ਦਾਸ ਜੀ",
@@ -158,12 +118,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":4,
-          "day":18
-        }
-      },
+      "date":5,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
@@ -178,12 +133,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":4,
-          "day":21
-        }
-      },
+      "date":8,
       "holidays":[
         {
           "pa":"ਜਨਮ ਭਗਤ ਧੰਨਾ ਜੀ",
@@ -193,12 +143,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":5,
-          "day":2
-        }
-      },
+      "date":19,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ",
@@ -208,12 +153,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":5,
-          "day":4
-        }
-      },
+      "date":21,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਚਾਲੀ ਮੁਕਤੇ (ਮੁਕਤਸਰ ਸਾਹਿਬ)",
@@ -225,12 +165,7 @@
   ],
   "3":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":5,
-          "day":15
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਜੇਠ",
@@ -240,12 +175,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":5,
-          "day":17
-        }
-      },
+      "date":3,
       "holidays":[
         {
           "pa":"ਛੋਟਾ ਘੱਲੂਘਾਰਾ",
@@ -255,12 +185,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":5,
-          "day":23
-        }
-      },
+      "date":9,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਅਮਰ ਦਾਸ ਜੀ",
@@ -270,12 +195,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":1
-        }
-      },
+      "date":18,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਭਾਈ ਮਹਿੰਗਾ ਸਿੰਘ ਬੱਬਰ",
@@ -285,12 +205,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":4
-        }
-      },
+      "date":21,
       "holidays":[
         {
           "pa":"ਸ਼੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ ਸਾਹਿਬ 'ਤੇ ਹਮਲਾ",
@@ -300,12 +215,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":6
-        }
-      },
+      "date":23,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਬਾਬਾ ਜਰਨੈਲ ਸਿੰਘ ਜੀ ਭਿੰਡਰਾਂਵਾਲੇ",
@@ -315,12 +225,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":11
-        }
-      },
+      "date":28,
       "holidays":[
         {
           "pa":"ਗੁਰਗੱਦੀ ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
@@ -332,12 +237,7 @@
   ],
   "4":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":15
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਹਾੜ",
@@ -347,12 +247,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":16
-        }
-      },
+      "date":2,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਦਿਵਸ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ",
@@ -362,12 +257,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":25
-        }
-      },
+      "date":11,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ",
@@ -377,12 +267,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":6,
-          "day":29
-        }
-      },
+      "date":15,
       "holidays":[
         {
           "pa":"ਬਰਸੀ ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
@@ -392,12 +277,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":7,
-          "day":2
-        }
-      },
+      "date":18,
       "holidays":[
         {
           "pa":"ਸਿਰਜਣਾ ਦਿਵਸ ਸ਼੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ ਸਾਹਿਬ",
@@ -407,12 +287,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":7,
-          "day":5
-        }
-      },
+      "date":21,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
@@ -422,12 +297,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":7,
-          "day":9
-        }
-      },
+      "date":25,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਭਾਈ ਮਨੀ ਸਿੰਘ ਜੀ",
@@ -439,12 +309,7 @@
   ],
   "5":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":7,
-          "day":16
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਸਾਵਣ",
@@ -459,12 +324,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":7,
-          "day":21
-        }
-      },
+      "date":6,
       "holidays":[
         {
           "pa":"ਮੀਰੀ ਪੀਰੀ ਦਿਵਸ - ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
@@ -474,12 +334,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":7,
-          "day":23
-        }
-      },
+      "date":8,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਸਾਹਿਬ ਜੀ",
@@ -489,12 +344,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":8,
-          "day":8
-        }
-      },
+      "date":24,
       "holidays":[
         {
           "pa":"ਮੋਰਚਾ ਗੁਰੂ ਕਾ ਬਾਗ",
@@ -506,12 +356,7 @@
   ],
   "6":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":8,
-          "day":16
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਭਾਦੋਂ",
@@ -521,12 +366,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":8,
-          "day":20
-        }
-      },
+      "date":5,
       "holidays":[
         {
           "pa":"ਬਰਸੀ ਬਾਬਾ ਬੁੱਢਾ ਜੀ",
@@ -536,12 +376,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":8,
-          "day":30
-        }
-      },
+      "date":15,
       "holidays":[
         {
           "pa":"ਸੰਪੂਰਨਤਾ ਦਿਵਸ ਸ਼੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ",
@@ -551,12 +386,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":9,
-          "day":1
-        }
-      },
+      "date":17,
       "holidays":[
         {
           "pa":"ਪਹਿਲਾ ਪ੍ਰਕਾਸ਼ ਸ਼੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ",
@@ -568,12 +398,7 @@
   ],
   "7":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":9,
-          "day":15
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਅੱਸੂ",
@@ -583,12 +408,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":9,
-          "day":16
-        }
-      },
+      "date":2,
       "holidays":[
         {
           "pa":"ਗੁਰਗੱਦੀ ਗੁਰੂ ਰਾਮ ਦਾਸ ਜੀ",
@@ -613,12 +433,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":9,
-          "day":18
-        }
-      },
+      "date":4,
       "holidays":[
         {
           "pa":"ਗੁਰਗੱਦੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
@@ -628,12 +443,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":9,
-          "day":22
-        }
-      },
+      "date":8,
       "holidays":[
         {
           "pa":"ਜੋਤੀ-ਜੋਤਿ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
@@ -643,12 +453,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":10,
-          "day":5
-        }
-      },
+      "date":21,
       "holidays":[
         {
           "pa":"ਜੋੜ ਮੇਲਾ ਬੀੜ ਬਾਬਾ ਬੁੱਢਾ ਜੀ (ਠੱਠਾ)",
@@ -658,12 +463,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":10,
-          "day":9
-        }
-      },
+      "date":25,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਰਾਮ ਦਾਸ ਜੀ",
@@ -675,12 +475,7 @@
   ],
   "8":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":10,
-          "day":15
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਕੱਤਕ",
@@ -690,12 +485,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":10,
-          "day":20
-        }
-      },
+      "date":6,
       "holidays":[
         {
           "pa":"ਗੁਰਗੱਦੀ ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਸਾਹਿਬ ਜੀ",
@@ -715,12 +505,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":10,
-          "day":21
-        }
-      },
+      "date":7,
       "holidays":[
         {
           "pa":"ਜੋਤੀ-ਜੋਤਿ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
@@ -735,12 +520,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":10,
-          "day":28
-        }
-      },
+      "date":14,
       "holidays":[
         {
           "pa":"ਸਾਕਾ ਪੰਜਾ ਸਾਹਿਬ",
@@ -750,12 +530,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":10,
-          "day":31
-        }
-      },
+      "date":17,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਭਾਈ ਬੇਅੰਤ ਸਿੰਘ",
@@ -765,12 +540,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":11,
-          "day":1
-        }
-      },
+      "date":18,
       "holidays":[
         {
           "pa":"ਜਨਮ ਮਾਤਾ ਸਾਹਿਬ ਕੌਰ ਜੀ",
@@ -780,12 +550,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":11,
-          "day":13
-        }
-      },
+      "date":30,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਬਾਬਾ ਦੀਪ ਸਿੰਘ ਜੀ",
@@ -797,12 +562,7 @@
   ],
   "9":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":11,
-          "day":14
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਮੱਘਰ",
@@ -812,12 +572,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":11,
-          "day":24
-        }
-      },
+      "date":11,
       "holidays":[
         {
           "pa":"ਗੁਰਗੱਦੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
@@ -837,12 +592,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":11,
-          "day":28
-        }
-      },
+      "date":15,
       "holidays":[
         {
           "pa":"ਜਨਮ ਸਾਹਿਬਜ਼ਾਦਾ ਬਾਬਾ ਜ਼ੋਰਾਵਰ ਸਿੰਘ ਜੀ",
@@ -852,12 +602,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":12,
-          "day":2
-        }
-      },
+      "date":19,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਬਾਬਾ ਗੁਰਬਖ਼ਸ਼ ਸਿੰਘ ਜੀ",
@@ -867,12 +612,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":12,
-          "day":12
-        }
-      },
+      "date":29,
       "holidays":[
         {
           "pa":"ਜਨਮ ਸਾਹਿਬਜ਼ਾਦਾ ਬਾਬਾ ਫ਼ਤਹਿ ਸਿੰਘ ਜੀ",
@@ -884,12 +624,7 @@
   ],
   "10":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":12,
-          "day":14
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਪੋਹ",
@@ -899,12 +634,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":12,
-          "day":21
-        }
-      },
+      "date":8,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਵੱਡੇ ਸਾਹਿਬਜ਼ਾਦੇ",
@@ -924,12 +654,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":12,
-          "day":22
-        }
-      },
+      "date":9,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਬਾਬਾ ਸੰਗਤ ਸਿੰਘ ਜੀ",
@@ -939,12 +664,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":12,
-          "day":26
-        }
-      },
+      "date":13,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਛੋਟੇ ਸਾਹਿਬਜ਼ਾਦੇ",
@@ -959,12 +679,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":1,
-          "day":5
-        }
-      },
+      "date":23,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
@@ -974,12 +689,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":1,
-          "day":6
-        }
-      },
+      "date":24,
       "holidays":[
         {
           "pa":"ਸ਼ਹੀਦੀ ਭਾਈ ਕੇਹਰ ਸਿੰਘ ਜੀ ਅਤੇ ਭਾਈ ਸਤਵੰਤ ਸਿੰਘ ਜੀ",
@@ -991,12 +701,7 @@
   ],
   "11":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":1,
-          "day":13
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਮਾਘ",
@@ -1016,12 +721,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":1,
-          "day":19
-        }
-      },
+      "date":7,
       "holidays":[
         {
           "pa":"ਚਾਬੀਆਂ ਦਾ ਮੋਰਚਾ",
@@ -1031,12 +731,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":1,
-          "day":26
-        }
-      },
+      "date":14,
       "holidays":[
         {
           "pa":"ਜਨਮ ਬਾਬਾ ਦੀਪ ਸਿੰਘ ਜੀ",
@@ -1046,12 +741,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":1,
-          "day":31
-        }
-      },
+      "date":19,
       "holidays":[
         {
           "pa":"ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਹਰਿਰਾਇ ਸਾਹਿਬ ਜੀ",
@@ -1061,12 +751,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":2,
-          "day":6
-        }
-      },
+      "date":25,
       "holidays":[
         {
           "pa":"ਜੋੜ ਮੇਲਾ ਕੋਠਾ ਸਾਹਿਬ (ਵੱਲਾ)",
@@ -1076,12 +761,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":2,
-          "day":8
-        }
-      },
+      "date":27,
       "holidays":[
         {
           "pa":"ਵੱਡਾ ਘੱਲੂਘਾਰਾ",
@@ -1091,12 +771,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":2,
-          "day":11
-        }
-      },
+      "date":30,
       "holidays":[
         {
           "pa":"ਜਨਮ ਸਾਹਿਬਜ਼ਾਦਾ ਬਾਬਾ ਅਜੀਤ ਸਿੰਘ ਜੀ",
@@ -1108,12 +783,7 @@
   ],
   "12":[
     {
-      "date":{
-        "gregorianDate":{
-          "month":2,
-          "day":12
-        }
-      },
+      "date":1,
       "holidays":[
         {
           "pa":"ਅਰੰਭ ਫੱਗਣ",
@@ -1123,12 +793,7 @@
       ]
     },
     {
-      "date":{
-        "gregorianDate":{
-          "month":2,
-          "day":21
-        }
-      },
+      "date":10,
       "holidays":[
         {
           "pa":"ਸਾਕਾ ਨਨਕਾਣਾ ਸਾਹਿਬ",

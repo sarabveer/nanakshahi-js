@@ -17,9 +17,9 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 - [Usage](#usage)
 - [API](#api)
   * [getDateFromLunarTithi(year, month, tithi, [paksh]) ⇒ Object](#getdatefromlunartithiyear-month-tithi-paksh-%E2%87%92-object)
-  * [getDateFromNanakshahi(year, month, day) ⇒ Object](#getdatefromnanakshahiyear-month-day-%E2%87%92-object)
+  * [getDateFromNanakshahi(year, month, date) ⇒ Object](#getdatefromnanakshahiyear-month-date-%E2%87%92-object)
   * [getHolidaysForDay(gregorianDate) ⇒ Array](#getholidaysfordaygregoriandate-%E2%87%92-array)
-  * [getHolidaysForMonth(month) ⇒ Object](#getholidaysformonthmonth-%E2%87%92-object)
+  * [getHolidaysForMonth(month, [year]) ⇒ Object](#getholidaysformonthmonth-year-%E2%87%92-object)
   * [getMovableHoliday(holiday, [year]) ⇒ Object](#getmovableholidayholiday-year-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
   * [getPanchang(date, [isJulian]) ⇒ Object](#getpanchangdate-isjulian-%E2%87%92-object)
@@ -82,7 +82,7 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 ```js
 getDateFromLunarTithi( 1723, 10, 7 )
 ```
-### getDateFromNanakshahi(year, month, day) ⇒ <code>Object</code>
+### getDateFromNanakshahi(year, month, date) ⇒ <code>Object</code>
 Converts Nanakshahi Date into the Gregorian Calendar
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -90,8 +90,8 @@ Converts Nanakshahi Date into the Gregorian Calendar
 | Param | Type | Description |
 | --- | --- | --- |
 | year | <code>number</code> | Nanakshahi Year |
-| month | <code>number</code> | Nanakshahi Month |
-| day | <code>number</code> | Nanakshahi Day |
+| month | <code>number</code> | Nanakshahi Month, 1-12 |
+| date | <code>number</code> | Nanakshahi Day |
 
 **Example**  
 ```js
@@ -110,7 +110,7 @@ Returns all Gurpurabs and Holidays for a Date
 ```js
 getHolidaysForDay( new Date() )
 ```
-### getHolidaysForMonth(month) ⇒ <code>Object</code>
+### getHolidaysForMonth(month, [year]) ⇒ <code>Object</code>
 Returns all Gurpurabs and Holidays for a Nanakshahi Month
 
 **Returns**: <code>Object</code> - Holidays for the month with Date and name in English and Punjabi  
@@ -118,6 +118,7 @@ Returns all Gurpurabs and Holidays for a Nanakshahi Month
 | Param | Type | Description |
 | --- | --- | --- |
 | month | <code>number</code> | Nanakshahi Month, 1-12 |
+| [year] | <code>number</code> | Nanakshahi Year, Default is Current year |
 
 **Example**  
 ```js

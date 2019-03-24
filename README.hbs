@@ -27,12 +27,13 @@ const n = require('nanakshahi')
 const date = new Date()
 
 n.getNanakshahiDate( date )
+n.getDateFromNanakshahi( 550, 10, 23 )
 n.getHolidaysForDay( date )
 n.getHolidaysForMonth( 1 )
 n.getMovableHoliday( 'gurunanak' )
 n.getTithi( date )
 n.getPanchang( date )
-n.getGregorianFromLunarDate( 1723, 10, 7 )
+n.getDateFromLunarTithi( 1723, 10, 7 )
 ```
 
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).

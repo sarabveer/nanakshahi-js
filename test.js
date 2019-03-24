@@ -1,4 +1,5 @@
-const n = require('nanakshahi')
+/* eslint-disable no-console */
+const n = require( './index' )
 
 const date = new Date()
 

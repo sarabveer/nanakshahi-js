@@ -16,7 +16,8 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 - [Usage](#usage)
 - [API](#api)
-  * [getGregorianFromLunarDate(year, year, tithi, [paksh]) ⇒ Object](#getgregorianfromlunardateyear-year-tithi-paksh-%E2%87%92-object)
+  * [getDateFromLunarTithi(year, month, tithi, [paksh]) ⇒ Object](#getdatefromlunartithiyear-month-tithi-paksh-%E2%87%92-object)
+  * [getDateFromNanakshahi(year, month, day) ⇒ Object](#getdatefromnanakshahiyear-month-day-%E2%87%92-object)
   * [getHolidaysForDay(gregorianDate) ⇒ Array](#getholidaysfordaygregoriandate-%E2%87%92-array)
   * [getHolidaysForMonth(month) ⇒ Object](#getholidaysformonthmonth-%E2%87%92-object)
   * [getMovableHoliday(holiday, [year]) ⇒ Object](#getmovableholidayholiday-year-%E2%87%92-object)
@@ -41,12 +42,13 @@ const n = require('nanakshahi')
 const date = new Date()
 
 n.getNanakshahiDate( date )
+n.getDateFromNanakshahi( 550, 10, 23 )
 n.getHolidaysForDay( date )
 n.getHolidaysForMonth( 1 )
 n.getMovableHoliday( 'gurunanak' )
 n.getTithi( date )
 n.getPanchang( date )
-n.getGregorianFromLunarDate( 1723, 10, 7 )
+n.getDateFromLunarTithi( 1723, 10, 7 )
 ```
 
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
@@ -64,7 +66,7 @@ Want a demo?
 
 ## API
 
-### getGregorianFromLunarDate(year, year, tithi, [paksh]) ⇒ <code>Object</code>
+### getDateFromLunarTithi(year, month, tithi, [paksh]) ⇒ <code>Object</code>
 Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or minus 1 day)
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -72,13 +74,28 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | year | <code>number</code> |  | Bikrami Year |
-| year | <code>number</code> |  | Bikrami Month |
+| month | <code>number</code> |  | Bikrami Month |
 | tithi | <code>number</code> |  | Bikrami Tithi |
 | [paksh] | <code>boolean</code> | <code>false</code> | Lunar Paksh. Default is Sudi, `true` for Vadi. |
 
 **Example**  
 ```js
-getGregorianFromLunarDate( 1723, 10, 7 )
+getDateFromLunarTithi( 1723, 10, 7 )
+```
+### getDateFromNanakshahi(year, month, day) ⇒ <code>Object</code>
+Converts Nanakshahi Date into the Gregorian Calendar
+
+**Returns**: <code>Object</code> - Gregorian Date  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| year | <code>number</code> | Nanakshahi Year |
+| month | <code>number</code> | Nanakshahi Month |
+| day | <code>number</code> | Nanakshahi Day |
+
+**Example**  
+```js
+getDateFromNanakshahi( 550, 10, 23 )
 ```
 ### getHolidaysForDay(gregorianDate) ⇒ <code>Array</code>
 Returns all Gurpurabs and Holidays for a Date

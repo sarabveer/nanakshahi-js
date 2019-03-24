@@ -11,3 +11,5 @@ script:
   - npm run lint
   - npm run build-docs
   - npm run build
+after_script:
+  - node test.js

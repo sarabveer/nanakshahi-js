@@ -1,6 +1,6 @@
 {
   "name": "nanakshahi",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
   "main": "dist/index.min.js",
   "unpkg": "dist/index.min.js",

@@ -3,7 +3,8 @@
 # nanakshahi-js
 A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
-[![npm](https://img.shields.io/npm/v/nanakshahi.svg?style=flat-square)](https://www.npmjs.com/package/nanakshahi)
+[![npm](https://img.shields.io/npm/v/nanakshahi.svg?style=flat-square)](https://www.npmjs.com/package/nanakshahi)[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSarabveer%2Fnanakshahi-js.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSarabveer%2Fnanakshahi-js?ref=badge_shield)
+
 [![Travis (.org)](https://img.shields.io/travis/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://travis-ci.org/Sarabveer/nanakshahi-js)
 [![GitHub license](https://img.shields.io/github/license/Sarabveer/nanakshahi-js.svg?style=flat-square)](./LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/issues)
@@ -203,3 +204,7 @@ The general workflow for contributing:
 - Add JSDoc function documentation and examples.
 - Run tests with `npm test` and ensure they all pass. Testing is done with the `mocha` testing framework.
 - Create a pull request with the changes.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSarabveer%2Fnanakshahi-js.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSarabveer%2Fnanakshahi-js?ref=badge_large)

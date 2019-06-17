@@ -39,8 +39,8 @@ n.getHolidaysForDay( date )
 n.getHolidaysForMonth( 1 )
 n.getMovableHoliday( 'gurunanak' )
 n.getTithi( date )
-n.getPanchang( date )
-n.getDateFromLunarTithi( 1723, 10, 7 )
+n.getBikramiDate( date )
+n.getDateFromTithi( 1723, 10, 7 )
 ```
 
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).

@@ -1,4 +1,4 @@
-const n = require('nanakshahi')
+const n = require( './index' )
 
 const date = new Date()
 
@@ -8,5 +8,5 @@ console.log( n.getHolidaysForDay( date ) )
 console.log( n.getHolidaysForMonth( 1 ) )
 console.log( n.getMovableHoliday( 'gurunanak' ) )
 console.log( n.getTithi( date ) )
-console.log( n.getPanchang( date ) )
-console.log( n.getDateFromLunarTithi( 1723, 10, 7 ) )
+console.log( n.getBikramiDate( date ) )
+console.log( n.getDateFromTithi( 1723, 10, 7 ) )

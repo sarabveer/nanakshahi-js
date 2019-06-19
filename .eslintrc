@@ -56,6 +56,14 @@
     "space-in-parens": [
       "error",
       "always"
+    ],
+    "yoda": [
+      2,
+      "never", 
+      {
+        "exceptRange": true,
+        "onlyEquality": false
+      }
     ]
   }
 }

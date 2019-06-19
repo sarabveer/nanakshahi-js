@@ -16,6 +16,14 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 - [Usage](#usage)
 - [API](#api)
+  * [getBikramiDate(date, [isJulian]) ⇒ Object](#getbikramidatedate-isjulian-%E2%87%92-object)
+  * [getDateFromNanakshahi(year, month, date) ⇒ Object](#getdatefromnanakshahiyear-month-date-%E2%87%92-object)
+  * [getDateFromTithi(year, month, tithi, [paksh], [leapMonth], [leapDay]) ⇒ Object](#getdatefromtithiyear-month-tithi-paksh-leapmonth-leapday-%E2%87%92-object)
+  * [getHolidaysForDay(gregorianDate) ⇒ Array](#getholidaysfordaygregoriandate-%E2%87%92-array)
+  * [getHolidaysForMonth(month, [year]) ⇒ Object](#getholidaysformonthmonth-year-%E2%87%92-object)
+  * [getMovableHoliday(holiday, [year]) ⇒ Object](#getmovableholidayholiday-year-%E2%87%92-object)
+  * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
+  * [getTithi(date) ⇒ Object](#gettithidate-%E2%87%92-object)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 
@@ -59,6 +67,120 @@ Want a demo?
 
 ## API
 
+### getBikramiDate(date, [isJulian]) ⇒ <code>Object</code>
+Returns given date to the corresponding date in the Panchang
+
+**Returns**: <code>Object</code> - Panchang (Includes Lunar and Solar Date)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| date | <code>Object</code> |  | JavaScript Date() Object |
+| [isJulian] | <code>boolean</code> | <code>false</code> | Set to true if entered date is in Julian Calendar |
+
+**Example**  
+```js
+getBikramiDate( new Date() )
+```
+### getDateFromNanakshahi(year, month, date) ⇒ <code>Object</code>
+Converts Nanakshahi Date into the Gregorian Calendar
+
+**Returns**: <code>Object</code> - Gregorian Date  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| year | <code>number</code> | Nanakshahi Year |
+| month | <code>number</code> | Nanakshahi Month, 1-12 |
+| date | <code>number</code> | Nanakshahi Day |
+
+**Example**  
+```js
+getDateFromNanakshahi( 550, 10, 23 )
+```
+### getDateFromTithi(year, month, tithi, [paksh], [leapMonth], [leapDay]) ⇒ <code>Object</code>
+Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or minus 1 day)
+
+**Returns**: <code>Object</code> - Gregorian Date  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| year | <code>number</code> |  | Bikrami Year |
+| month | <code>number</code> |  | Bikrami Month |
+| tithi | <code>number</code> |  | Bikrami Tithi |
+| [paksh] | <code>boolean</code> | <code>false</code> | Lunar Paksh. Default is Sudi, `true` for Vadi. |
+| [leapMonth] | <code>boolean</code> | <code>false</code> | Set to true if the month is Adhika Month (Mal Maas) |
+| [leapDay] | <code>boolean</code> | <code>false</code> | Set to true if the lunar day spans more than 1 solar day |
+
+**Example**  
+```js
+getDateFromTithi( 1723, 10, 7 )
+```
+### getHolidaysForDay(gregorianDate) ⇒ <code>Array</code>
+Returns all Gurpurabs and Holidays for a Date
+
+**Returns**: <code>Array</code> - Holidays for the day with Date and name in English and Punjabi  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| gregorianDate | <code>Object</code> | JavaScript Date() Object |
+
+**Example**  
+```js
+getHolidaysForDay( new Date() )
+```
+### getHolidaysForMonth(month, [year]) ⇒ <code>Object</code>
+Returns all Gurpurabs and Holidays for a Nanakshahi Month
+
+**Returns**: <code>Object</code> - Holidays for the month with Date and name in English and Punjabi  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| month | <code>number</code> | Nanakshahi Month, 1-12 |
+| [year] | <code>number</code> | Nanakshahi Year, Default is Current year |
+
+**Example**  
+```js
+getHolidaysForMonth( 1 )
+```
+### getMovableHoliday(holiday, [year]) ⇒ <code>Object</code>
+Returns Gregorian Date of Movable HolidayMovable Holidays List:- `gurunanak` Parkash Guru Nanak Dev Ji- `bandishhorr` Bandi Shhorr Divas / Diwali- `holla` Holla Mahalla- `kabeer` Birthday Bhagat Kabeer Ji- `ravidaas` Birthday Bhagat Ravidaas Ji- `naamdev` Birthday Bhagat Naamdev Ji
+
+**Returns**: <code>Object</code> - Holiday Date with Name in English and Punjabi  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| holiday | <code>string</code> | Holiday which date will be calculated. |
+| [year] | <code>number</code> | Gregorian year, default is current year. |
+
+**Example**  
+```js
+getMovableHoliday( 'gurunanak' )
+```
+### getNanakshahiDate(gregorianDate) ⇒ <code>Object</code>
+Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar
+
+**Returns**: <code>Object</code> - Nanakshahi Date in English and Punjabi  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| gregorianDate | <code>Object</code> | JavaScript Date() Object |
+
+**Example**  
+```js
+getNanakshahiDate( new Date() )
+```
+### getTithi(date) ⇒ <code>Object</code>
+Get Tithi and other Moon/Lunar Info
+
+**Returns**: <code>Object</code> - Tithi and Moon Info  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| date | <code>Object</code> | JavaScript Date() Object |
+
+**Example**  
+```js
+getTithi( new Date() )
+```
 
 ## Acknowledgements
 

@@ -4,7 +4,7 @@
 A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 [![npm](https://img.shields.io/npm/v/nanakshahi.svg?style=flat-square)](https://www.npmjs.com/package/nanakshahi)
-[![Travis (.org)](https://img.shields.io/travis/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://travis-ci.org/Sarabveer/nanakshahi-js)
+[![Travis (.org)](https://img.shields.io/travis/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://travis-ci.com/Sarabveer/nanakshahi-js)
 [![GitHub license](https://img.shields.io/github/license/Sarabveer/nanakshahi-js.svg?style=flat-square)](./LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/pulls)
@@ -16,6 +16,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 - [Usage](#usage)
 - [API](#api)
+- [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 
 <!-- tocstop -->
@@ -58,6 +59,18 @@ Want a demo?
 
 ## API
 
+
+## Acknowledgements
+
+I want to thank:
+
+* Guru Sahib, who inspires us into Sikhi.
+
+* Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi to me and answered my various technical and historical questions.
+
+* E. M. Reingold and N. Dershowitz for their Calendrical Calculations book and Calendrica program code, which serves as the base for this library.
+
+* My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me find answers his technical questions.
 
 ## Contributing
 

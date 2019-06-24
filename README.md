@@ -146,7 +146,7 @@ Get Tithi and other Moon/Lunar Info
 getTithi( new Date() )
 ```
 ### findBikramiDate(date, [isJulian]) ⇒ <code>Object</code>
-Returns given date to the corresponding date in the Panchang
+Returns given date to the corresponding date in the Bikrami Calendar
 
 **Returns**: <code>Object</code> - Bikrami (Includes Lunar and Solar Date)  
 

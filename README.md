@@ -15,6 +15,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 <!-- toc -->
 
 - [Usage](#usage)
+  * [Polyfill](#polyfill)
 - [API](#api)
   * [getBikramiDate(date, [isJulian]) ⇒ Object](#getbikramidatedate-isjulian-%E2%87%92-object)
   * [getDateFromNanakshahi(year, month, date) ⇒ Object](#getdatefromnanakshahiyear-month-date-%E2%87%92-object)
@@ -64,6 +65,15 @@ Or via [jsDelivr](https://www.jsdelivr.com/package/npm/nanakshahi)
 
 Want a demo?  
 [![Try on RunKit](https://img.shields.io/badge/Try%20on%20RunKit-nanakshahi-brightgreen.svg?style=flat-square)](https://npm.runkit.com/nanakshahi)
+
+### Polyfill
+
+While the library does run on most modern browsers, it does not work on IE11.
+
+The library requires `Math.trunc`, `Math.sign`, and `Array.prototype.includes`. These can be added with the Polyfill below:
+```
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Math.trunc%2CMath.sign%2CArray.prototype.includes"></script>
+```
 
 ## API
 
@@ -188,11 +198,11 @@ I want to thank:
 
 * Guru Sahib, who inspires us into Sikhi.
 
-* Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi to me and answered my various technical and historical questions.
+* Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi Calendars to me and answered my various technical and historical questions.
 
 * E. M. Reingold and N. Dershowitz for their Calendrical Calculations book and Calendrica program code, which serves as the base for this library.
 
-* My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me find answers his technical questions.
+* My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me find answers to his technical questions.
 
 ## Contributing
 
@@ -216,5 +226,4 @@ The general workflow for contributing:
 - Write or update existing tests with expected results
 - Implement functions/changes
 - Add JSDoc function documentation and examples.
-- Run tests with `npm test` and ensure they all pass. Testing is done with the `mocha` testing framework.
 - Create a pull request with the changes.

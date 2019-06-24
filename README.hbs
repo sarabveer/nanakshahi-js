@@ -30,10 +30,10 @@ n.getNanakshahiDate( date )
 n.getDateFromNanakshahi( 550, 10, 23 )
 n.getHolidaysForDay( date )
 n.getHolidaysForMonth( 1 )
-n.getMovableHoliday( 'gurunanak' )
 n.getTithi( date )
-n.getBikramiDate( date )
-n.getDateFromTithi( 1723, 10, 7 )
+n.findBikramiDate( date )
+n.findDateFromTithi( 1723, 10, 7 )
+n.findMovableHoliday( 'gurunanak' )
 ```
 
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
@@ -60,7 +60,19 @@ The library requires `Math.trunc`, `Math.sign`, and `Array.prototype.includes`. 
 
 ## API
 
-{{#globals}}
+{{#globals _name="^get" ~}}
+### {{>sig-name}}
+{{>description~}}
+{{>summary~}}
+{{>default~}}
+{{>returns~}}
+{{>params~}}
+{{>examples~}}
+{{>member-index~}}
+{{>separator~}}
+{{>members~}}
+{{/globals}}
+{{#globals _name="^find" ~}}
 ### {{>sig-name}}
 {{>description~}}
 {{>summary~}}

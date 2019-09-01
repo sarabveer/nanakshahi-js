@@ -70,10 +70,12 @@ Want a demo?
 
 While the library does run on most modern browsers, it does not work on IE11.
 
-The library requires `Math.trunc`, `Math.sign`, and `Array.prototype.includes`. These can be added with the Polyfill below:
+The library requires `Math.sign`, and `Array.prototype.includes`. These can be added with the Polyfill below:
 ```
-<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Math.trunc%2CMath.sign%2CArray.prototype.includes"></script>
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Math.sign%2CArray.prototype.includes"></script>
 ```
+
+The functions `findBikramiDate()` and `findDateFromTithi()` both use `Date.prototype.toLocaleString()`, with the `Asia/Kolkata` IANA timezone, which isn't supported in IE11.
 
 ## API
 

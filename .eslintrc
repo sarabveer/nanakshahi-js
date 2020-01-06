@@ -23,6 +23,7 @@
       "warn",
       "never"
     ],
+    "no-nested-ternary": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",

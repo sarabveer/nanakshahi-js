@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/Sarabveer/nanakshahi-js#readme",
   "dependencies": {
-    "julian": "^0.2.0",
     "suncalc": "^1.8.0"
   },
   "devDependencies": {

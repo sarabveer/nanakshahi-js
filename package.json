@@ -8,7 +8,7 @@
   "scripts": {
     "test": "node test.js",
     "build": "webpack --mode production",
-    "build-docs": "jsdoc2md --template README.hbs lib/**/*.js > README.md &&  markdown-toc -i README.md ",
+    "build-docs": "jsdoc2md --partial docs/sig-name.hbs --template docs/README.hbs lib/*.js > README.md && markdown-toc -i README.md",
     "lint": "eslint .",
     "precommit": "npm run lint && npm run build-docs && git add README.md",
     "release": "release-it"

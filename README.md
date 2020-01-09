@@ -17,13 +17,13 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 - [Usage](#usage)
   * [Polyfill](#polyfill)
 - [API](#api)
-  * [getDateFromNanakshahi(year, month, date) ⇒ Object](#getdatefromnanakshahiyear-month-date-%E2%87%92-object)
-  * [getHolidaysForDay([gregorianDate]) ⇒ Array](#getholidaysfordaygregoriandate-%E2%87%92-array)
-  * [getHolidaysForMonth(month, [year]) ⇒ Object](#getholidaysformonthmonth-year-%E2%87%92-object)
-  * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
-  * [findBikramiDate(date, [astro], [isJulian]) ⇒ Object](#findbikramidatedate-astro-isjulian-%E2%87%92-object)
-  * [findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro]) ⇒ Object](#finddatefromtithiyear-month-date-paksh-leapmonth-leapday-astro-%E2%87%92-object)
-  * [findMovableHoliday(holiday, [year]) ⇒ Object](#findmovableholidayholiday-year-%E2%87%92-object)
+  * [getDateFromNanakshahi(year, month, date)](#getdatefromnanakshahiyear-month-date)
+  * [getHolidaysForDay([gregorianDate])](#getholidaysfordaygregoriandate)
+  * [getHolidaysForMonth(month, [year])](#getholidaysformonthmonth-year)
+  * [getNanakshahiDate(gregorianDate)](#getnanakshahidategregoriandate)
+  * [findBikramiDate(date, [astro], [isJulian])](#findbikramidatedate-astro-isjulian)
+  * [findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro])](#finddatefromtithiyear-month-date-paksh-leapmonth-leapday-astro)
+  * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 
@@ -46,10 +46,9 @@ n.getNanakshahiDate( date )
 n.getDateFromNanakshahi( 550, 10, 23 )
 n.getHolidaysForDay( date )
 n.getHolidaysForMonth( 1 )
-n.getTithi( date )
-n.findBikramiDate( date )
-n.findDateFromTithi( 1723, 10, 7 )
 n.findMovableHoliday( 'gurunanak' )
+n.findBikramiFromDate( date )
+n.findDateFromBikramiLunar( 1723, 10, 7 )
 ```
 
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
@@ -69,16 +68,14 @@ Want a demo?
 
 While the library does run on most modern browsers, it does not work on IE11.
 
-The library requires `Math.sign` and `Array.prototype.includes`. These can be added with the Polyfill below to add partial IE11 support:
+The library requires `Math.sign` and `Array.prototype.includes`. These can be added with the Polyfill below to add IE11 support:
 ```
 <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Math.sign%2CArray.prototype.includes"></script>
 ```
 
-The functions `findBikramiDate()` and `findDateFromTithi()` both use `Date.prototype.toLocaleString()`, with the `Asia/Kolkata` IANA timezone, which isn't supported in IE11.
-
 ## API
 
-### getDateFromNanakshahi(year, month, date) ⇒ <code>Object</code>
+### getDateFromNanakshahi(year, month, date)
 Converts Nanakshahi Date into the Gregorian Calendar
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -93,7 +90,7 @@ Converts Nanakshahi Date into the Gregorian Calendar
 ```js
 getDateFromNanakshahi( 550, 10, 23 )
 ```
-### getHolidaysForDay([gregorianDate]) ⇒ <code>Array</code>
+### getHolidaysForDay([gregorianDate])
 Returns all Gurpurabs and Holidays for a Date
 
 **Returns**: <code>Array</code> - Holidays for the day with Date and name in English and Punjabi  
@@ -106,7 +103,7 @@ Returns all Gurpurabs and Holidays for a Date
 ```js
 getHolidaysForDay( new Date() )
 ```
-### getHolidaysForMonth(month, [year]) ⇒ <code>Object</code>
+### getHolidaysForMonth(month, [year])
 Returns all Gurpurabs and Holidays for a Nanakshahi Month
 
 **Returns**: <code>Object</code> - Holidays for the month with Date and name in English and Punjabi  
@@ -120,7 +117,7 @@ Returns all Gurpurabs and Holidays for a Nanakshahi Month
 ```js
 getHolidaysForMonth( 1 )
 ```
-### getNanakshahiDate(gregorianDate) ⇒ <code>Object</code>
+### getNanakshahiDate(gregorianDate)
 Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar
 
 **Returns**: <code>Object</code> - Nanakshahi Date in English and Punjabi  
@@ -133,7 +130,7 @@ Converts given Gregorian Date to the corresponding date in the Nanakshahi Calend
 ```js
 getNanakshahiDate( new Date() )
 ```
-### findBikramiDate(date, [astro], [isJulian]) ⇒ <code>Object</code>
+### findBikramiDate(date, [astro], [isJulian])
 Returns given date to the corresponding date in the Bikrami Calendar
 
 **Returns**: <code>Object</code> - Bikrami (Includes Lunar and Solar Date)  
@@ -148,7 +145,7 @@ Returns given date to the corresponding date in the Bikrami Calendar
 ```js
 findBikramiDate( new Date() )
 ```
-### findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro]) ⇒ <code>Object</code>
+### findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro])
 Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or minus 1 day)
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -167,7 +164,7 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 ```js
 findDateFromTithi( 1723, 10, 7 )
 ```
-### findMovableHoliday(holiday, [year]) ⇒ <code>Object</code>
+### findMovableHoliday(holiday, [year])
 Returns Gregorian Date of Movable HolidayMovable Holidays List:- `gurunanak` Parkash Guru Nanak Dev Ji- `bandishhorr` Bandi Shhorr Divas / Diwali- `holla` Holla Mahalla- `kabeer` Birthday Bhagat Kabeer Ji- `ravidaas` Birthday Bhagat Ravidaas Ji- `naamdev` Birthday Bhagat Naamdev Ji
 
 **Returns**: <code>Object</code> - Holiday Date with Name in English and Punjabi  
@@ -181,16 +178,15 @@ Returns Gregorian Date of Movable HolidayMovable Holidays List:- `gurunanak` P
 ```js
 findMovableHoliday( 'gurunanak' )
 ```
-
 ## Acknowledgements
 
 I want to thank:
 
 * Guru Sahib, who inspires us into Sikhi.
 
-* Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi Calendars to me and answered my various technical and historical questions.
+* Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi Calendars to me and answered my various technical and historical questions. Spent countless hours verifying the calculations done by me.
 
-* E. M. Reingold and N. Dershowitz for their Calendrical Calculations book and Calendrica program code, which serves as the base for this library.
+* E. M. Reingold and N. Dershowitz for their Calendrical Calculations book and Calendrica program code, which serves as the base for the Bikrami calculations done in this library.
 
 * My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me find answers to his technical questions.
 

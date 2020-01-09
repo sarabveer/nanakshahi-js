@@ -30,10 +30,9 @@ n.getNanakshahiDate( date )
 n.getDateFromNanakshahi( 550, 10, 23 )
 n.getHolidaysForDay( date )
 n.getHolidaysForMonth( 1 )
-n.getTithi( date )
-n.findBikramiDate( date )
-n.findDateFromTithi( 1723, 10, 7 )
 n.findMovableHoliday( 'gurunanak' )
+n.findBikramiFromDate( date )
+n.findDateFromBikramiLunar( 1723, 10, 7 )
 ```
 
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
@@ -53,12 +52,10 @@ Want a demo?
 
 While the library does run on most modern browsers, it does not work on IE11.
 
-The library requires `Math.sign` and `Array.prototype.includes`. These can be added with the Polyfill below to add partial IE11 support:
+The library requires `Math.sign` and `Array.prototype.includes`. These can be added with the Polyfill below to add IE11 support:
 ```
 <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Math.sign%2CArray.prototype.includes"></script>
 ```
-
-The functions `findBikramiDate()` and `findDateFromTithi()` both use `Date.prototype.toLocaleString()`, with the `Asia/Kolkata` IANA timezone, which isn't supported in IE11.
 
 ## API
 
@@ -86,16 +83,15 @@ The functions `findBikramiDate()` and `findDateFromTithi()` both use `Date.proto
 {{>separator~}}
 {{>members~}}
 {{/globals}}
-
 ## Acknowledgements
 
 I want to thank:
 
 * Guru Sahib, who inspires us into Sikhi.
 
-* Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi Calendars to me and answered my various technical and historical questions.
+* Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi Calendars to me and answered my various technical and historical questions. Spent countless hours verifying the calculations done by me.
 
-* E. M. Reingold and N. Dershowitz for their Calendrical Calculations book and Calendrica program code, which serves as the base for this library.
+* E. M. Reingold and N. Dershowitz for their Calendrical Calculations book and Calendrica program code, which serves as the base for the Bikrami calculations done in this library.
 
 * My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me find answers to his technical questions.
 

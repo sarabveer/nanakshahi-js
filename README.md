@@ -24,6 +24,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
   * [findBikramiFromDate(date, [astro], [isJulian])](#findbikramifromdatedate-astro-isjulian)
   * [findDateFromBikramiLunar(year, month, date, [paksh], [leapMonth], [leapDay], [astro])](#finddatefrombikramilunaryear-month-date-paksh-leapmonth-leapday-astro)
+  * [findDateFromBikramiSolar(year, month, date, [astro])](#finddatefrombikramisolaryear-month-date-astro)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 
@@ -49,6 +50,7 @@ n.getHolidaysForMonth( 1 )
 n.findMovableHoliday( 'gurunanak' )
 n.findBikramiFromDate( date )
 n.findDateFromBikramiLunar( 1723, 10, 7 )
+n.findDateFromBikramiSolar( 1723, 9, 23 )
 ```
 
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
@@ -160,7 +162,7 @@ Returns given date to the corresponding date in the Bikrami Calendar
 findBikramiFromDate( new Date() )
 ```
 ### findDateFromBikramiLunar(year, month, date, [paksh], [leapMonth], [leapDay], [astro])
-Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or minus 1 day)
+Converts Bikrami Lunar Date into the Gregorian Calendar
 
 **Returns**: <code>Object</code> - Gregorian Date  
 
@@ -177,6 +179,22 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 **Example**  
 ```js
 findDateFromBikramiLunar( 1723, 10, 7 )
+```
+### findDateFromBikramiSolar(year, month, date, [astro])
+Converts Bikrami Solar Date into the Gregorian Calendar
+
+**Returns**: <code>Object</code> - Gregorian Date  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| year | <code>number</code> |  | Bikrami Year |
+| month | <code>number</code> |  | Bikrami Month |
+| date | <code>number</code> |  | Bikrami Day |
+| [astro] | <code>boolean</code> | <code>true</code> | Set to false to use Surya Sidhantta instead of Drik Gannit |
+
+**Example**  
+```js
+findDateFromBikramiSolar( 1723, 9, 23 )
 ```
 
 ## Acknowledgements

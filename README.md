@@ -21,9 +21,9 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getHolidaysForDay([gregorianDate])](#getholidaysfordaygregoriandate)
   * [getHolidaysForMonth(month, [year])](#getholidaysformonthmonth-year)
   * [getNanakshahiDate(gregorianDate)](#getnanakshahidategregoriandate)
-  * [findBikramiDate(date, [astro], [isJulian])](#findbikramidatedate-astro-isjulian)
-  * [findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro])](#finddatefromtithiyear-month-date-paksh-leapmonth-leapday-astro)
   * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
+  * [findBikramiFromDate(date, [astro], [isJulian])](#findbikramifromdatedate-astro-isjulian)
+  * [findDateFromBikramiLunar(year, month, date, [paksh], [leapMonth], [leapDay], [astro])](#finddatefrombikramilunaryear-month-date-paksh-leapmonth-leapday-astro)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 
@@ -130,7 +130,21 @@ Converts given Gregorian Date to the corresponding date in the Nanakshahi Calend
 ```js
 getNanakshahiDate( new Date() )
 ```
-### findBikramiDate(date, [astro], [isJulian])
+### findMovableHoliday(holiday, [year])
+Returns Gregorian Date of Movable HolidayMovable Holidays List:- `gurunanak` Parkash Guru Nanak Dev Ji- `bandishhorr` Bandi Shhorr Divas / Diwali- `holla` Holla Mahalla- `kabeer` Birthday Bhagat Kabeer Ji- `ravidaas` Birthday Bhagat Ravidaas Ji- `naamdev` Birthday Bhagat Naamdev Ji
+
+**Returns**: <code>Object</code> - Holiday Date with Name in English and Punjabi  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| holiday | <code>string</code> | Holiday which date will be calculated. |
+| [year] | <code>number</code> | Gregorian year, default is current year. |
+
+**Example**  
+```js
+findMovableHoliday( 'gurunanak' )
+```
+### findBikramiFromDate(date, [astro], [isJulian])
 Returns given date to the corresponding date in the Bikrami Calendar
 
 **Returns**: <code>Object</code> - Bikrami (Includes Lunar and Solar Date)  
@@ -143,9 +157,9 @@ Returns given date to the corresponding date in the Bikrami Calendar
 
 **Example**  
 ```js
-findBikramiDate( new Date() )
+findBikramiFromDate( new Date() )
 ```
-### findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro])
+### findDateFromBikramiLunar(year, month, date, [paksh], [leapMonth], [leapDay], [astro])
 Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or minus 1 day)
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -162,22 +176,9 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 
 **Example**  
 ```js
-findDateFromTithi( 1723, 10, 7 )
+findDateFromBikramiLunar( 1723, 10, 7 )
 ```
-### findMovableHoliday(holiday, [year])
-Returns Gregorian Date of Movable HolidayMovable Holidays List:- `gurunanak` Parkash Guru Nanak Dev Ji- `bandishhorr` Bandi Shhorr Divas / Diwali- `holla` Holla Mahalla- `kabeer` Birthday Bhagat Kabeer Ji- `ravidaas` Birthday Bhagat Ravidaas Ji- `naamdev` Birthday Bhagat Naamdev Ji
 
-**Returns**: <code>Object</code> - Holiday Date with Name in English and Punjabi  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| holiday | <code>string</code> | Holiday which date will be calculated. |
-| [year] | <code>number</code> | Gregorian year, default is current year. |
-
-**Example**  
-```js
-findMovableHoliday( 'gurunanak' )
-```
 ## Acknowledgements
 
 I want to thank:

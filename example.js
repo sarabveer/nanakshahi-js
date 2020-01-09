@@ -1,4 +1,4 @@
-const n = require( './index' )
+const n = require( 'nanakshahi' )
 
 const date = new Date()
 

@@ -22,7 +22,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getHolidaysForMonth(month, [year]) ⇒ Object](#getholidaysformonthmonth-year-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
   * [getTithi([gregorianDate]) ⇒ Object](#gettithigregoriandate-%E2%87%92-object)
-  * [findBikramiDate(date, [isJulian]) ⇒ Object](#findbikramidatedate-isjulian-%E2%87%92-object)
+  * [findBikramiDate(date, [astro], [isJulian]) ⇒ Object](#findbikramidatedate-astro-isjulian-%E2%87%92-object)
   * [findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay]) ⇒ Object](#finddatefromtithiyear-month-date-paksh-leapmonth-leapday-%E2%87%92-object)
   * [findMovableHoliday(holiday, [year]) ⇒ Object](#findmovableholidayholiday-year-%E2%87%92-object)
 - [Acknowledgements](#acknowledgements)
@@ -147,7 +147,7 @@ Get Tithi and other Moon/Lunar Info
 ```js
 getTithi( new Date() )
 ```
-### findBikramiDate(date, [isJulian]) ⇒ <code>Object</code>
+### findBikramiDate(date, [astro], [isJulian]) ⇒ <code>Object</code>
 Returns given date to the corresponding date in the Bikrami Calendar
 
 **Returns**: <code>Object</code> - Bikrami (Includes Lunar and Solar Date)  
@@ -155,6 +155,7 @@ Returns given date to the corresponding date in the Bikrami Calendar
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | date | <code>Object</code> |  | JavaScript Date() Object |
+| [astro] | <code>boolean</code> | <code>true</code> | Set to false to use Surya Sidhantta instead of Drik Gannit |
 | [isJulian] | <code>boolean</code> | <code>false</code> | Set to true if entered date is in Julian Calendar |
 
 **Example**  

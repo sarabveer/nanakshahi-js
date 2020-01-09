@@ -5,6 +5,7 @@ const getHolidaysForMonth = require( './lib/getHolidaysForMonth' )
 const findMovableHoliday = require( './lib/findMovableHoliday' )
 const findBikramiFromDate = require( './lib/findBikramiFromDate' )
 const findDateFromBikramiLunar = require( './lib/findDateFromBikramiLunar' )
+const findDateFromBikramiSolar = require( './lib/findDateFromBikramiSolar' )
 
 module.exports = {
   getNanakshahiDate,
@@ -14,4 +15,5 @@ module.exports = {
   findMovableHoliday,
   findBikramiFromDate,
   findDateFromBikramiLunar,
+  findDateFromBikramiSolar,
 }

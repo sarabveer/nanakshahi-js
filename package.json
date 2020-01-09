@@ -26,9 +26,7 @@
     "url": "https://github.com/Sarabveer/nanakshahi-js/issues"
   },
   "homepage": "https://github.com/Sarabveer/nanakshahi-js#readme",
-  "dependencies": {
-    "suncalc": "^1.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",

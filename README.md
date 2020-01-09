@@ -21,9 +21,8 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getHolidaysForDay([gregorianDate]) ⇒ Array](#getholidaysfordaygregoriandate-%E2%87%92-array)
   * [getHolidaysForMonth(month, [year]) ⇒ Object](#getholidaysformonthmonth-year-%E2%87%92-object)
   * [getNanakshahiDate(gregorianDate) ⇒ Object](#getnanakshahidategregoriandate-%E2%87%92-object)
-  * [getTithi([gregorianDate]) ⇒ Object](#gettithigregoriandate-%E2%87%92-object)
   * [findBikramiDate(date, [astro], [isJulian]) ⇒ Object](#findbikramidatedate-astro-isjulian-%E2%87%92-object)
-  * [findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay]) ⇒ Object](#finddatefromtithiyear-month-date-paksh-leapmonth-leapday-%E2%87%92-object)
+  * [findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro]) ⇒ Object](#finddatefromtithiyear-month-date-paksh-leapmonth-leapday-astro-%E2%87%92-object)
   * [findMovableHoliday(holiday, [year]) ⇒ Object](#findmovableholidayholiday-year-%E2%87%92-object)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
@@ -115,7 +114,7 @@ Returns all Gurpurabs and Holidays for a Nanakshahi Month
 | Param | Type | Description |
 | --- | --- | --- |
 | month | <code>number</code> | Nanakshahi Month, 1-12 |
-| [year] | <code>number</code> | Nanakshahi Year, Default is Current year |
+| [year] | <code>number</code> | Nanakshahi Year, default is Current Gregorian Year |
 
 **Example**  
 ```js
@@ -134,19 +133,6 @@ Converts given Gregorian Date to the corresponding date in the Nanakshahi Calend
 ```js
 getNanakshahiDate( new Date() )
 ```
-### getTithi([gregorianDate]) ⇒ <code>Object</code>
-Get Tithi and other Moon/Lunar Info
-
-**Returns**: <code>Object</code> - Tithi and Moon Info  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| [gregorianDate] | <code>Object</code> | JavaScript Date() Object, defaults to current Date. |
-
-**Example**  
-```js
-getTithi( new Date() )
-```
 ### findBikramiDate(date, [astro], [isJulian]) ⇒ <code>Object</code>
 Returns given date to the corresponding date in the Bikrami Calendar
 
@@ -162,7 +148,7 @@ Returns given date to the corresponding date in the Bikrami Calendar
 ```js
 findBikramiDate( new Date() )
 ```
-### findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay]) ⇒ <code>Object</code>
+### findDateFromTithi(year, month, date, [paksh], [leapMonth], [leapDay], [astro]) ⇒ <code>Object</code>
 Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or minus 1 day)
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -175,6 +161,7 @@ Converts Bikrami Lunar Date into the Gregorian Calendar (Accuracy of plus or min
 | [paksh] | <code>boolean</code> | <code>false</code> | Lunar Paksh. Default is Sudi, `true` for Vadi. |
 | [leapMonth] | <code>boolean</code> | <code>false</code> | Set to true if the month is Adhika Month (Mal Maas) |
 | [leapDay] | <code>boolean</code> | <code>false</code> | Set to true if the lunar day spans more than 1 solar day |
+| [astro] | <code>boolean</code> | <code>true</code> | Set to false to use Surya Sidhantta instead of Drik Gannit |
 
 **Example**  
 ```js

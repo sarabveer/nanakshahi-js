@@ -21,7 +21,7 @@
     "url": "git+https://github.com/Sarabveer/nanakshahi-js.git"
   },
   "author": "Sarabveer Singh <me@sarabveer.me> (https://sarabveer.me)",
-  "license": "MIT",
+  "license": "LGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/Sarabveer/nanakshahi-js/issues"
   },

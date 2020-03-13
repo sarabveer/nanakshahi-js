@@ -80,7 +80,7 @@ The library requires `Math.sign` and `Array.prototype.includes`. These can be ad
 ### getDateFromNanakshahi(year, month, date)
 Converts Nanakshahi Date into the Gregorian Calendar
 
-**Returns**: <code>Object</code> - Gregorian Date  
+**Returns**: <code>Object</code> - Gregorian Date + Nanakshahi Date in English and Punjabi  
 
 | Param | Type | Description |
 | --- | --- | --- |

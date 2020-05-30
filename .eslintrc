@@ -1,4 +1,9 @@
 {
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
   "extends": "airbnb",
   "env": {
     "mocha": true

@@ -15,6 +15,8 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
 
 ## Usage
 
+### NPM
+
 Install the library via NPM:
 ```
 npm install nanakshahi
@@ -36,6 +38,11 @@ n.findDateFromBikramiLunar( 1723, 10, 7 )
 n.findDateFromBikramiSolar( 1723, 9, 23 )
 ```
 
+Want a demo?  
+[![Try on RunKit](https://img.shields.io/badge/Try%20on%20RunKit-nanakshahi-brightgreen.svg?style=flat-square)](https://npm.runkit.com/nanakshahi)
+
+### CDN
+
 Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
 ```
 <script src="https://unpkg.com/nanakshahi"></script>
@@ -46,17 +53,29 @@ Or via [jsDelivr](https://www.jsdelivr.com/package/npm/nanakshahi)
 <script src="https://cdn.jsdelivr.net/npm/nanakshahi/dist/index.min.js"></script>
 ```
 
-Want a demo?  
-[![Try on RunKit](https://img.shields.io/badge/Try%20on%20RunKit-nanakshahi-brightgreen.svg?style=flat-square)](https://npm.runkit.com/nanakshahi)
+## Notes
 
-### Polyfill
+### Nanakshahi Calendar
 
-While the library does run on most modern browsers, it does not work on IE11.
+This library is based of the Nanakshahi Calendar passed by Sri Akal Takht Sahib in 2003 CE.
 
-The library requires `Math.sign` and `Array.prototype.includes`. These can be added with the Polyfill below to add IE11 support:
-```
-<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Math.sign%2CArray.prototype.includes"></script>
-```
+All Gurpurabs and Historical dates are reckoned with their Solar Dates. An exception to this are the Movable Lunar dates which are to be reckoned using the Bikrami calender until further Panthic consensus.
+
+The Nanakshahi functions will only calculate dates after Nanakshahi adoption in 2003 CE. Any dates before March 14, 2003 CE (535 NS) will return with an `Out of Range` error.
+
+### Bikrami
+
+The Bikrami functions in this library were implemented to automatically calculate the Movable dates for the original Nanakshahi Calendar.
+
+The functions are also provided as reference for researchers and historians. No support will be given to anyone attempting to build a calendar from these functions.
+
+The accuracy of the Bikrami calculations match the dates given in *Jantri 500 Years* by Pal Singh Purewal and this library has been checked personally by Pal Singh Purewal himself.
+
+### JavaScript `Date()` Object
+
+In this library, the Date object has been given in local time of the client. This ensures that the Gregorian date calculated by the functions are correct regardless of Timezone.
+
+The only exception is when the Date is given in UTC for the Bikrami Lunar Tithi Start/End times and Sankranti Moment time.
 
 ## API
 
@@ -105,7 +124,7 @@ I want to thank:
 
 * Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi Calendars to me and answered my various technical and historical questions. Spent countless hours verifying the calculations done by me.
 
-* E. M. Reingold and N. Dershowitz for their Calendrical Calculations book and Calendrica program code, which serves as the base for the Bikrami calculations done in this library.
+* E. M. Reingold and N. Dershowitz for their *Calendrical Calculations* book and their mathematical functions, which serve as the base for the Bikrami calculations done in this library.
 
 * My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me find answers to his technical questions.
 

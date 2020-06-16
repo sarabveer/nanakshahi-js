@@ -135,19 +135,12 @@ getNanakshahiDate( new Date() )
 ```
 ### findMovableHoliday(holiday, [year])
 Returns Gregorian Date of Movable Holiday
-Movable Holidays List:
-- `gurunanak` Parkash Guru Nanak Dev Ji
-- `bandishhorr` Bandi Shhorr Divas / Diwali
-- `holla` Holla Mahalla
-- `kabeer` Birthday Bhagat Kabeer Ji
-- `ravidaas` Birthday Bhagat Ravidaas Ji
-- `naamdev` Birthday Bhagat Naamdev Ji
 
 **Returns**: <code>Object</code> - Holiday Date with Name in English and Punjabi  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| holiday | <code>string</code> | Holiday which date will be calculated. |
+| holiday | <code>string</code> | Movable Holidays:<br> `gurunanak` - Parkash Guru Nanak Dev Ji<br> `bandishhorr` - Bandi Shhorr Divas / Diwali<br> `holla` - Holla Mahalla<br> `kabeer` - Birthday Bhagat Kabeer Ji<br> `ravidaas` - Birthday Bhagat Ravidaas Ji<br> `naamdev` - Birthday Bhagat Naamdev Ji |
 | [year] | <code>number</code> | Gregorian year, default is current year. |
 
 **Example**  

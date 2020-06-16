@@ -20,11 +20,11 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getDateFromNanakshahi(year, month, date)](#getdatefromnanakshahiyear-month-date)
   * [getHolidaysForDay([gregorianDate])](#getholidaysfordaygregoriandate)
   * [getHolidaysForMonth(month, [year])](#getholidaysformonthmonth-year)
-  * [getNanakshahiDate(gregorianDate)](#getnanakshahidategregoriandate)
+  * [getNanakshahiDate([gregorianDate])](#getnanakshahidategregoriandate)
   * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
-  * [findBikramiFromDate(date, [astro], [isJulian])](#findbikramifromdatedate-astro-isjulian)
-  * [findDateFromBikramiLunar(year, month, date, [paksh], [leapMonth], [leapDay], [astro])](#finddatefrombikramilunaryear-month-date-paksh-leapmonth-leapday-astro)
-  * [findDateFromBikramiSolar(year, month, date, [astro])](#finddatefrombikramisolaryear-month-date-astro)
+  * [findBikramiFromDate(date, [options])](#findbikramifromdatedate-options)
+  * [findDateFromBikramiLunar(year, month, date, [options])](#finddatefrombikramilunaryear-month-date-options)
+  * [findDateFromBikramiSolar(year, month, date, [options])](#finddatefrombikramisolaryear-month-date-options)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 - [License](#license)
@@ -98,9 +98,9 @@ Returns all Gurpurabs and Holidays for a Date
 
 **Returns**: <code>Array</code> - Holidays for the day with Date and name in English and Punjabi  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| [gregorianDate] | <code>Object</code> | JavaScript Date() Object |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [gregorianDate] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
 
 **Example**  
 ```js
@@ -114,20 +114,20 @@ Returns all Gurpurabs and Holidays for a Nanakshahi Month
 | Param | Type | Description |
 | --- | --- | --- |
 | month | <code>number</code> | Nanakshahi Month, 1-12 |
-| [year] | <code>number</code> | Nanakshahi Year, default is Current Gregorian Year |
+| [year] | <code>number</code> | Nanakshahi Year. Default is current Nanakshahi Year. |
 
 **Example**  
 ```js
 getHolidaysForMonth( 1 )
 ```
-### getNanakshahiDate(gregorianDate)
+### getNanakshahiDate([gregorianDate])
 Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar
 
 **Returns**: <code>Object</code> - Nanakshahi Date in English and Punjabi  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| gregorianDate | <code>Object</code> | JavaScript Date() Object |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [gregorianDate] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
 
 **Example**  
 ```js
@@ -154,7 +154,7 @@ Movable Holidays List:
 ```js
 findMovableHoliday( 'gurunanak' )
 ```
-### findBikramiFromDate(date, [astro], [isJulian])
+### findBikramiFromDate(date, [options])
 Returns given date to the corresponding date in the Bikrami Calendar
 
 **Returns**: <code>Object</code> - Bikrami (Includes Lunar and Solar Date)  
@@ -162,14 +162,13 @@ Returns given date to the corresponding date in the Bikrami Calendar
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | date | <code>Object</code> |  | JavaScript Date() Object |
-| [astro] | <code>boolean</code> | <code>true</code> | Set to false to use Surya Sidhantta instead of Drik Gannit |
-| [isJulian] | <code>boolean</code> | <code>false</code> | Set to true if entered date is in Julian Calendar |
+| [options] | <code>Object</code> | <code>{ astro: true }</code> | `[astro=true]` - Set to `false` to use Surya Sidhantta instead of Drik Gannit<br> `[isJulian]` - Set to `true` if entered date is in Julian Calendar |
 
 **Example**  
 ```js
 findBikramiFromDate( new Date() )
 ```
-### findDateFromBikramiLunar(year, month, date, [paksh], [leapMonth], [leapDay], [astro])
+### findDateFromBikramiLunar(year, month, date, [options])
 Converts Bikrami Lunar Date into the Gregorian Calendar
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -179,16 +178,13 @@ Converts Bikrami Lunar Date into the Gregorian Calendar
 | year | <code>number</code> |  | Bikrami Year |
 | month | <code>number</code> |  | Bikrami Month |
 | date | <code>number</code> |  | Bikrami Tithi |
-| [paksh] | <code>boolean</code> | <code>false</code> | Lunar Paksh. Default is Sudi, `true` for Vadi. |
-| [leapMonth] | <code>boolean</code> | <code>false</code> | Set to true if the month is Adhika Month (Mal Maas) |
-| [leapDay] | <code>boolean</code> | <code>false</code> | Set to true if the lunar day spans more than 1 solar day |
-| [astro] | <code>boolean</code> | <code>true</code> | Set to false to use Surya Sidhantta instead of Drik Gannit |
+| [options] | <code>Object</code> | <code>{ astro: true }</code> | `[astro=true]` - Set to `false` to use Surya Sidhantta instead of Drik Gannit<br> `[paksh]` - Lunar Paksh. Default is Sudi, `true` for Vadi.<br> `[leapMonth]` - Set to `true` if the month is Adhika Month (Mal Maas)<br> `[leapDay]` - Set to `true` if the lunar day spans more than 1 solar day |
 
 **Example**  
 ```js
 findDateFromBikramiLunar( 1723, 10, 7 )
 ```
-### findDateFromBikramiSolar(year, month, date, [astro])
+### findDateFromBikramiSolar(year, month, date, [options])
 Converts Bikrami Solar Date into the Gregorian Calendar
 
 **Returns**: <code>Object</code> - Gregorian Date  
@@ -198,7 +194,7 @@ Converts Bikrami Solar Date into the Gregorian Calendar
 | year | <code>number</code> |  | Bikrami Year |
 | month | <code>number</code> |  | Bikrami Month |
 | date | <code>number</code> |  | Bikrami Day |
-| [astro] | <code>boolean</code> | <code>true</code> | Set to false to use Surya Sidhantta instead of Drik Gannit |
+| [options] | <code>Object</code> | <code>{ astro: true }</code> | `[astro=true]` Set to `false` to use Surya Sidhantta instead of Drik Gannit |
 
 **Example**  
 ```js

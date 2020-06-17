@@ -27,6 +27,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getHolidaysForMonth(month, [year])](#getholidaysformonthmonth-year)
   * [getNanakshahiDate([gregorianDate])](#getnanakshahidategregoriandate)
   * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
+  * [calculateAstroTimes([date])](#calculateastrotimesdate)
   * [findBikramiFromDate(date, [options])](#findbikramifromdatedate-options)
   * [findDateFromBikramiLunar(year, month, date, [options])](#finddatefrombikramilunaryear-month-date-options)
   * [findDateFromBikramiSolar(year, month, date, [options])](#finddatefrombikramisolaryear-month-date-options)
@@ -98,7 +99,7 @@ The accuracy of the Bikrami calculations match the dates given in *Jantri 500 Ye
 
 In this library, the Date object has been given in local time of the client. This ensures that the Gregorian date calculated by the functions are correct regardless of Timezone.
 
-The only exception is when the Date is given in UTC for the Bikrami Lunar Tithi Start/End times and Sankranti Moment time.
+The only exception is when the Date is given in UTC for the Astro Times function, Bikrami Lunar Tithi Start/End times, and Sankranti Moment time.
 
 ## API
 
@@ -170,6 +171,19 @@ Returns Gregorian Date of Movable Holiday
 **Example**  
 ```js
 findMovableHoliday( 'gurunanak' )
+```
+### calculateAstroTimes([date])
+Calculates astronomical times for the Sun and Moon (at Amritsar)
+
+**Returns**: <code>Object</code> - Astronomical values for the Sun and Moon in Universal Time.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [date] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
+
+**Example**  
+```js
+calculateAstroTimes( new Date() )
 ```
 ### findBikramiFromDate(date, [options])
 Returns given date to the corresponding date in the Bikrami Calendar

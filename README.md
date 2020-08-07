@@ -180,7 +180,7 @@ Calculates astronomical times for the Sun and Moon (at Amritsar)
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [date] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
-| [location] | <code>Object</code> | <code>AMRITSAR</code> | Object that contains four required values:<br> `latitude` - Latitude (in Decimal)<br> `longitude` - Longitude (in Decimal)<br> `elevation` - Elevation (in Meters), should be set to `0`.<br> `zone` - Timezone (in Decimal). For example, UTC-5 would be `-5`. |
+| [location] | <code>Object</code> | <code>AMRITSAR</code> | Object that contains four required values:<br> `latitude` - Latitude (in Decimal)<br> `longitude` - Longitude (in Decimal)<br> `elevation` - Elevation (in Meters), should be set to `0`.<br> `zone` - Timezone Offset divided by 24 (in Decimal). For example, UTC-5 would be `-5 / 24`. |
 
 **Example**  
 ```js

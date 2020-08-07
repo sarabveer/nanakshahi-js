@@ -27,7 +27,7 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getHolidaysForMonth(month, [year])](#getholidaysformonthmonth-year)
   * [getNanakshahiDate([gregorianDate])](#getnanakshahidategregoriandate)
   * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
-  * [calculateAstroTimes([date])](#calculateastrotimesdate)
+  * [calculateAstroTimes([date], [location])](#calculateastrotimesdate-location)
   * [findBikramiFromDate(date, [options])](#findbikramifromdatedate-options)
   * [findDateFromBikramiLunar(year, month, date, [options])](#finddatefrombikramilunaryear-month-date-options)
   * [findDateFromBikramiSolar(year, month, date, [options])](#finddatefrombikramisolaryear-month-date-options)
@@ -172,7 +172,7 @@ Returns Gregorian Date of Movable Holiday
 ```js
 findMovableHoliday( 'gurunanak' )
 ```
-### calculateAstroTimes([date])
+### calculateAstroTimes([date], [location])
 Calculates astronomical times for the Sun and Moon (at Amritsar)
 
 **Returns**: <code>Object</code> - Astronomical values for the Sun and Moon in Universal Time.  
@@ -180,6 +180,7 @@ Calculates astronomical times for the Sun and Moon (at Amritsar)
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [date] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
+| [location] | <code>Object</code> | <code>AMRITSAR</code> | Object that contains four required values:<br> `latitude` - Latitude (in Decimal)<br> `longitude` - Longitude (in Decimal)<br> `elevation` - Elevation (in Meters), should be set to `0`.<br> `zone` - Timezone (in Decimal). For example, UTC-5 would be `-5`. |
 
 **Example**  
 ```js

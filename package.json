@@ -30,21 +30,19 @@
     "calendrica": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
     "babel-loader": "^8.2.2",
-    "eslint": "^7.18.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "jsdoc-to-markdown": "^5.0.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jsdoc-to-markdown": "^7.0.1",
     "markdown-toc": "^1.2.0",
-    "pre-commit": "^1.2.2",
-    "release-it": "^13.7.1",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^4.2.2"
+    "release-it": "^14.5.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-merge": "^5.7.3"
   },
   "release-it": {
     "hooks": {

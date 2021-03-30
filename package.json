@@ -11,11 +11,9 @@
     "build-docs": "jsdoc2md --partial docs/sig-name.hbs --template docs/README.hbs lib/*.js > README.md && markdown-toc -i README.md",
     "lint": "eslint .",
     "precommit": "npm run lint && npm run build-docs && git add --renormalize README.md",
-    "release": "release-it"
+    "release": "release-it",
+    "prepare": "husky install"
   },
-  "pre-commit": [
-    "precommit"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sarabveer/nanakshahi-js.git"
@@ -42,7 +40,8 @@
     "release-it": "^14.5.0",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.6.0",
-    "webpack-merge": "^5.7.3"
+    "webpack-merge": "^5.7.3",
+    "husky": "^6.0.0"
   },
   "release-it": {
     "hooks": {

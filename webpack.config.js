@@ -1,6 +1,6 @@
 const path = require( 'path' )
 const { BannerPlugin } = require( 'webpack' )
-const { version, author, license } = require( './package.json' )
+const { version, author } = require( './package.json' )
 
 module.exports = {
   mode: 'production',
@@ -16,16 +16,16 @@ module.exports = {
     minimize: false,
   },
   plugins: [
-    new BannerPlugin( `nanakshahi-js v${version} | ${license} | Copyright (C) ${author}` ),
+    new BannerPlugin( `nanakshahi-js v${version} | ${author} | https://github.com/Sarabveer/nanakshahi-js` ),
   ],
   module: {
     rules: [
       {
         test: /\.m?js$/,
-        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
+            plugins: [ '@babel/plugin-proposal-class-properties' ],
             presets: [ '@babel/preset-env' ],
           },
         },

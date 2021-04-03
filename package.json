@@ -6,7 +6,7 @@
   "unpkg": "dist/index.min.js",
   "runkitExampleFilename": "example.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "jest --coverage",
     "build": "webpack && webpack --config webpack.prod.js",
     "build-docs": "jsdoc2md --partial docs/sig-name.hbs --template docs/README.hbs lib/*.js > README.md && markdown-toc -i README.md",
     "lint": "eslint .",
@@ -34,14 +34,16 @@
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.3",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
     "jsdoc-to-markdown": "^7.0.1",
     "markdown-toc": "^1.2.0",
     "release-it": "^14.5.0",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.6.0",
-    "webpack-merge": "^5.7.3",
-    "husky": "^6.0.0"
+    "webpack-merge": "^5.7.3"
   },
   "release-it": {
     "hooks": {

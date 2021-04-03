@@ -2,9 +2,10 @@
   "extends": "airbnb-base",
   "root": true,
   "env": {
-    "es6": true
+    "es6": true,
+    "jest/globals": true
   },
-  "plugins": ["simple-import-sort"],
+  "plugins": ["jest", "simple-import-sort"],
   "rules": {
     // Spacing in brackets is consistent and readable
     "array-bracket-spacing": ["error", "always"],
@@ -81,6 +82,8 @@
     "simple-import-sort/imports": "error",
     // Add new line between imports
     "import/order": "off",
-    "sort-imports": "off"
+    "sort-imports": "off",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error"
   }
 }

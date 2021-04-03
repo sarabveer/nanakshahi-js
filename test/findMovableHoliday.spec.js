@@ -104,4 +104,3 @@ describe( "findMovableHoliday( 'bandichhorr' )", () => {
     expect( findMovableHoliday( 'bandichhorr', year ).gregorianDate ).toEqual( result )
   } ) )
 } )
-

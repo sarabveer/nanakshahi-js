@@ -23,10 +23,10 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [JavaScript `Date()` Object](#javascript-date-object)
 - [API](#api)
   * [getDateFromNanakshahi(year, month, date)](#getdatefromnanakshahiyear-month-date)
-  * [getHolidaysForDay([gregorianDate])](#getholidaysfordaygregoriandate)
-  * [getHolidaysForMonth(month, [year])](#getholidaysformonthmonth-year)
+  * [getGurpurabsForDay([gregorianDate])](#getgurpurabsfordaygregoriandate)
+  * [getGurpurabsForMonth(month, [year])](#getgurpurabsformonthmonth-year)
   * [getNanakshahiDate([gregorianDate])](#getnanakshahidategregoriandate)
-  * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
+  * [findMovableGurpurab(gurpurab, [year])](#findmovablegurpurabgurpurab-year)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 - [License](#license)
@@ -50,9 +50,9 @@ const date = new Date()
 
 n.getNanakshahiDate( date )
 n.getDateFromNanakshahi( 550, 10, 23 )
-n.getHolidaysForDay( date )
-n.getHolidaysForMonth( 1 )
-n.findMovableHoliday( 'gurunanak' )
+n.getGurpurabsForDay( date )
+n.getGurpurabsForMonth( 1 )
+n.findMovableGurpurab( 'gurunanak' )
 ```
 
 Want a demo?  
@@ -109,10 +109,10 @@ Converts Nanakshahi Date into the Gregorian Calendar
 ```js
 getDateFromNanakshahi( 550, 10, 23 )
 ```
-### getHolidaysForDay([gregorianDate])
-Returns all Gurpurabs and Holidays for a Date
+### getGurpurabsForDay([gregorianDate])
+Returns all Gurpurabs for a Date
 
-**Returns**: <code>Array</code> - Holidays for the day with Date and name in English and Punjabi  
+**Returns**: <code>Array</code> - Gurpurabs for the day with Date and name in English and Punjabi  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -120,12 +120,12 @@ Returns all Gurpurabs and Holidays for a Date
 
 **Example**  
 ```js
-getHolidaysForDay( new Date() )
+getGurpurabsForDay( new Date() )
 ```
-### getHolidaysForMonth(month, [year])
-Returns all Gurpurabs and Holidays for a Nanakshahi Month
+### getGurpurabsForMonth(month, [year])
+Returns all Gurpurabs for a Nanakshahi Month
 
-**Returns**: <code>Object</code> - Holidays for the month with Date and name in English and Punjabi  
+**Returns**: <code>Object</code> - Gurpurabs for the month with Date and name in English and Punjabi  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -134,7 +134,7 @@ Returns all Gurpurabs and Holidays for a Nanakshahi Month
 
 **Example**  
 ```js
-getHolidaysForMonth( 1 )
+getGurpurabsForMonth( 1 )
 ```
 ### getNanakshahiDate([gregorianDate])
 Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar
@@ -149,19 +149,19 @@ Converts given Gregorian Date to the corresponding date in the Nanakshahi Calend
 ```js
 getNanakshahiDate( new Date() )
 ```
-### findMovableHoliday(holiday, [year])
-Returns Gregorian Date of Movable Holiday
+### findMovableGurpurab(gurpurab, [year])
+Returns Gregorian Date of Movable Gurpurab
 
-**Returns**: <code>Object</code> - Holiday Date with Name in English and Punjabi  
+**Returns**: <code>Object</code> - Gurpurab Date with Name in English and Punjabi  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| holiday | <code>string</code> | Movable Holidays:<br> `gurunanak` - Parkash Guru Nanak Dev Ji<br> `bandichhorr` - Bandi Chhorr Divas / Diwali<br> `holla` - Holla Mahalla<br> `kabeer` - Birthday Bhagat Kabeer Ji<br> `ravidaas` - Birthday Bhagat Ravidaas Ji<br> `naamdev` - Birthday Bhagat Naamdev Ji |
+| gurpurab | <code>string</code> | Movable Gurpurabs:<br> `gurunanak` - Parkash Guru Nanak Dev Ji<br> `bandichhorr` - Bandi Chhorr Divas / Diwali<br> `holla` - Holla Mahalla<br> `kabeer` - Birthday Bhagat Kabeer Ji<br> `ravidaas` - Birthday Bhagat Ravidaas Ji<br> `naamdev` - Birthday Bhagat Naamdev Ji |
 | [year] | <code>number</code> | Gregorian year, default is current year. |
 
 **Example**  
 ```js
-findMovableHoliday( 'gurunanak' )
+findMovableGurpurab( 'gurunanak' )
 ```
 
 ## Acknowledgements

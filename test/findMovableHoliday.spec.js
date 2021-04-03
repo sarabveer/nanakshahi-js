@@ -1,4 +1,4 @@
-const { findMovableHoliday } = require( '../index' )
+const { findMovableGurpurab } = require( '../index' )
 
 /*
   Movable Dates of Gurpurbs (Change Every Year)
@@ -9,7 +9,7 @@ const { findMovableHoliday } = require( '../index' )
 // Range from 2003 - 2020
 const years = Array( 18 ).fill( 0 ).map( ( _, i ) => i + 2003 )
 
-describe( "findMovableHoliday( 'gurunanak' )", () => {
+describe( "findMovableGurpurab( 'gurunanak' )", () => {
   const results = [
     { month: 11, date: 8 },
     { month: 11, date: 26 },
@@ -36,12 +36,12 @@ describe( "findMovableHoliday( 'gurunanak' )", () => {
     ( new Date( year, results[ i ].month - 1, results[ i ].date ) ),
   ] )
 
-  data.map( ( [ year, result ] ) => it( `Output of findMovableHoliday( 'gurunanak', ${year} ) should be: '${result}'`, () => {
-    expect( findMovableHoliday( 'gurunanak', year ).gregorianDate ).toEqual( result )
+  data.map( ( [ year, result ] ) => it( `Output of findMovableGurpurab( 'gurunanak', ${year} ) should be: '${result}'`, () => {
+    expect( findMovableGurpurab( 'gurunanak', year ).gregorianDate ).toEqual( result )
   } ) )
 } )
 
-describe( "findMovableHoliday( 'holla' )", () => {
+describe( "findMovableGurpurab( 'holla' )", () => {
   const results = [
     { month: 3, date: 19 },
     { month: 3, date: 7 },
@@ -68,12 +68,12 @@ describe( "findMovableHoliday( 'holla' )", () => {
     ( new Date( year, results[ i ].month - 1, results[ i ].date ) ),
   ] )
 
-  data.map( ( [ year, result ] ) => it( `Output of findMovableHoliday( 'holla', ${year} ) should be: '${result}'`, () => {
-    expect( findMovableHoliday( 'holla', year ).gregorianDate ).toEqual( result )
+  data.map( ( [ year, result ] ) => it( `Output of findMovableGurpurab( 'holla', ${year} ) should be: '${result}'`, () => {
+    expect( findMovableGurpurab( 'holla', year ).gregorianDate ).toEqual( result )
   } ) )
 } )
 
-describe( "findMovableHoliday( 'bandichhorr' )", () => {
+describe( "findMovableGurpurab( 'bandichhorr' )", () => {
   const results = [
     { month: 10, date: 25 },
     { month: 11, date: 12 },
@@ -100,7 +100,7 @@ describe( "findMovableHoliday( 'bandichhorr' )", () => {
     ( new Date( year, results[ i ].month - 1, results[ i ].date ) ),
   ] )
 
-  data.map( ( [ year, result ] ) => it( `Output of findMovableHoliday( 'bandichhorr', ${year} ) should be: '${result}'`, () => {
-    expect( findMovableHoliday( 'bandichhorr', year ).gregorianDate ).toEqual( result )
+  data.map( ( [ year, result ] ) => it( `Output of findMovableGurpurab( 'bandichhorr', ${year} ) should be: '${result}'`, () => {
+    expect( findMovableGurpurab( 'bandichhorr', year ).gregorianDate ).toEqual( result )
   } ) )
 } )

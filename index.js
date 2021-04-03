@@ -1,13 +1,13 @@
-const findMovableHoliday = require( './lib/findMovableHoliday' )
+const findMovableGurpurab = require( './lib/findMovableGurpurab' )
 const getDateFromNanakshahi = require( './lib/getDateFromNanakshahi' )
-const getHolidaysForDay = require( './lib/getHolidaysForDay' )
-const getHolidaysForMonth = require( './lib/getHolidaysForMonth' )
+const getGurpurabsForDay = require( './lib/getGurpurabsForDay' )
+const getGurpurabsForMonth = require( './lib/getGurpurabsForMonth' )
 const getNanakshahiDate = require( './lib/getNanakshahiDate' )
 
 module.exports = {
-  findMovableHoliday,
+  findMovableGurpurab,
   getDateFromNanakshahi,
-  getHolidaysForDay,
-  getHolidaysForMonth,
+  getGurpurabsForDay,
+  getGurpurabsForMonth,
   getNanakshahiDate,
 }

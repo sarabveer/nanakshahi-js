@@ -5,7 +5,7 @@
     "es6": true,
     "jest/globals": true
   },
-  "plugins": ["jest", "simple-import-sort"],
+  "plugins": ["jest", "require-sort"],
   "rules": {
     // Spacing in brackets is consistent and readable
     "array-bracket-spacing": ["error", "always"],
@@ -79,7 +79,15 @@
     // For the few semi-colons required (e.g. inline array operations), place them at the beginning of the statement
     "semi-style": ["error", "first"],
     // This plugin sorts alphabetically by default
-    "simple-import-sort/imports": "error",
+    "require-sort/require-sort": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": false,
+        "ignorePropertySort": false,
+        "propertySyntaxSortOrder": ["none", "single", "multiple"]
+      }
+    ],
     // Add new line between imports
     "import/order": "off",
     "sort-imports": "off",

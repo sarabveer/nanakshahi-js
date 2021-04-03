@@ -156,7 +156,7 @@ Returns Gregorian Date of Movable Holiday
 
 | Param | Type | Description |
 | --- | --- | --- |
-| holiday | <code>string</code> | Movable Holidays:<br> `gurunanak` - Parkash Guru Nanak Dev Ji<br> `bandishhorr` - Bandi Shhorr Divas / Diwali<br> `holla` - Holla Mahalla<br> `kabeer` - Birthday Bhagat Kabeer Ji<br> `ravidaas` - Birthday Bhagat Ravidaas Ji<br> `naamdev` - Birthday Bhagat Naamdev Ji |
+| holiday | <code>string</code> | Movable Holidays:<br> `gurunanak` - Parkash Guru Nanak Dev Ji<br> `bandichhorr` - Bandi Chhorr Divas / Diwali<br> `holla` - Holla Mahalla<br> `kabeer` - Birthday Bhagat Kabeer Ji<br> `ravidaas` - Birthday Bhagat Ravidaas Ji<br> `naamdev` - Birthday Bhagat Naamdev Ji |
 | [year] | <code>number</code> | Gregorian year, default is current year. |
 
 **Example**  

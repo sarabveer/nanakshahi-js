@@ -27,10 +27,6 @@ A JavaScript Library to get Nanakshahi Dates and Gurpurabs
   * [getHolidaysForMonth(month, [year])](#getholidaysformonthmonth-year)
   * [getNanakshahiDate([gregorianDate])](#getnanakshahidategregoriandate)
   * [findMovableHoliday(holiday, [year])](#findmovableholidayholiday-year)
-  * [calculateAstroTimes([date], [location])](#calculateastrotimesdate-location)
-  * [findBikramiFromDate(date, [options])](#findbikramifromdatedate-options)
-  * [findDateFromBikramiLunar(year, month, date, [options])](#finddatefrombikramilunaryear-month-date-options)
-  * [findDateFromBikramiSolar(year, month, date, [options])](#finddatefrombikramisolaryear-month-date-options)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 - [License](#license)
@@ -57,9 +53,6 @@ n.getDateFromNanakshahi( 550, 10, 23 )
 n.getHolidaysForDay( date )
 n.getHolidaysForMonth( 1 )
 n.findMovableHoliday( 'gurunanak' )
-n.findBikramiFromDate( date )
-n.findDateFromBikramiLunar( 1723, 10, 7 )
-n.findDateFromBikramiSolar( 1723, 9, 23 )
 ```
 
 Want a demo?  
@@ -98,8 +91,6 @@ The accuracy of the Bikrami calculations match the dates given in *Jantri 500 Ye
 ### JavaScript `Date()` Object
 
 In this library, the Date object has been given in local time of the client. This ensures that the Gregorian date calculated by the functions are correct regardless of Timezone.
-
-The only exception is when the Date is given in UTC for the Astro Times function, Bikrami Lunar Tithi Start/End times, and Sankranti Moment time.
 
 ## API
 
@@ -171,66 +162,6 @@ Returns Gregorian Date of Movable Holiday
 **Example**  
 ```js
 findMovableHoliday( 'gurunanak' )
-```
-### calculateAstroTimes([date], [location])
-Calculates astronomical times for the Sun and Moon (at Amritsar)
-
-**Returns**: <code>Object</code> - Astronomical values for the Sun and Moon in Universal Time.  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [date] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
-| [location] | <code>Object</code> | <code>AMRITSAR</code> | Object that contains four required values:<br> `latitude` - Latitude (in Decimal)<br> `longitude` - Longitude (in Decimal)<br> `elevation` - Elevation (in Meters), should be set to `0`.<br> `zone` - Timezone Offset divided by 24 (in Decimal). For example, UTC-5 would be `-5 / 24`. |
-
-**Example**  
-```js
-calculateAstroTimes( new Date() )
-```
-### findBikramiFromDate(date, [options])
-Returns given date to the corresponding date in the Bikrami Calendar
-
-**Returns**: <code>Object</code> - Bikrami (Includes Lunar and Solar Date)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| date | <code>Object</code> |  | JavaScript Date() Object |
-| [options] | <code>Object</code> | <code>{ astro: true }</code> | `[astro=true]` - Set to `false` to use Surya Sidhantta instead of Drik Gannit<br> `[isJulian]` - Set to `true` if entered date is in Julian Calendar |
-
-**Example**  
-```js
-findBikramiFromDate( new Date() )
-```
-### findDateFromBikramiLunar(year, month, date, [options])
-Converts Bikrami Lunar Date into the Gregorian Calendar
-
-**Returns**: <code>Object</code> - Gregorian Date  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| year | <code>number</code> |  | Bikrami Year |
-| month | <code>number</code> |  | Bikrami Month |
-| date | <code>number</code> |  | Bikrami Tithi |
-| [options] | <code>Object</code> | <code>{ astro: true }</code> | `[astro=true]` - Set to `false` to use Surya Sidhantta instead of Drik Gannit<br> `[paksh]` - Lunar Paksh. Default is Sudi, `true` for Vadi.<br> `[leapMonth]` - Set to `true` if the month is Adhika Month (Mal Maas)<br> `[leapDay]` - Set to `true` if the lunar day spans more than 1 solar day |
-
-**Example**  
-```js
-findDateFromBikramiLunar( 1723, 10, 7 )
-```
-### findDateFromBikramiSolar(year, month, date, [options])
-Converts Bikrami Solar Date into the Gregorian Calendar
-
-**Returns**: <code>Object</code> - Gregorian Date  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| year | <code>number</code> |  | Bikrami Year |
-| month | <code>number</code> |  | Bikrami Month |
-| date | <code>number</code> |  | Bikrami Day |
-| [options] | <code>Object</code> | <code>{ astro: true }</code> | `[astro=true]` Set to `false` to use Surya Sidhantta instead of Drik Gannit |
-
-**Example**  
-```js
-findDateFromBikramiSolar( 1723, 9, 23 )
 ```
 
 ## Acknowledgements

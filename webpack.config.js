@@ -1,6 +1,6 @@
-const path = require( 'path' )
 const { BannerPlugin } = require( 'webpack' )
-const { version, author } = require( './package.json' )
+const path = require( 'path' )
+const { author, version } = require( './package.json' )
 
 module.exports = {
   mode: 'production',

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const { merge } = require( 'webpack-merge' )
 const TerserPlugin = require( 'terser-webpack-plugin' )
 const config = require( './webpack.config.js' )
+const { merge } = require( 'webpack-merge' )
 
 module.exports = merge( config, {
   output: {

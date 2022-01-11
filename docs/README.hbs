@@ -2,7 +2,7 @@
 
 # nanakshahi-js
 
-A JavaScript Library to get Nanakshahi Dates and Gurpurabs
+A JavaScript library to get Nanakshahi dates and Gurpurabs
 
 [![npm](https://img.shields.io/npm/v/nanakshahi.svg?style=flat-square)](https://www.npmjs.com/package/nanakshahi)
 [![GitHub Workflow Status (event)](https://img.shields.io/github/workflow/status/Sarabveer/nanakshahi-js/Continuous%20Integration?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/actions)
@@ -59,23 +59,15 @@ Or via [jsDelivr](https://www.jsdelivr.com/package/npm/nanakshahi)
 
 ### Nanakshahi Calendar
 
-This library is based of the Nanakshahi Calendar passed by Sri Akal Takht Sahib in 2003 CE.
+This library is based on the Nanakshahi calendar passed by Sri Akal Takht Sahib in 2003 CE.
 
-All Gurpurabs and Historical dates are reckoned with their Solar Dates. An exception to this are the movable lunar dates which are to be reckoned using the Bikrami calender until further Panthic consensus.
+All Gurpurabs and historical dates are reckoned with their solar dates. An exception to this are the movable lunar dates which are to be reckoned using the Bikrami calendar until further Panthic consensus.
 
 The Nanakshahi functions will only calculate dates after Nanakshahi adoption in 2003 CE. Any dates before March 14, 2003 CE (535 NS) will return with an `Out of Range` error.
 
-### Bikrami
-
-The Bikrami functions in this library were implemented to automatically calculate the movable dates for the original Nanakshahi Calendar.
-
-The functions are also provided as reference for researchers and historians. No support will be given to anyone attempting to build a calendar from these functions.
-
-The accuracy of the Bikrami calculations match the dates given in *Jantri 500 Years* by Pal Singh Purewal and this library has been checked personally by Pal Singh Purewal himself.
-
 ### JavaScript `Date()` Object
 
-In this library, the Date object has been given in local time of the client. This ensures that the Gregorian date calculated by the functions are correct regardless of Timezone.
+In this library, the Date object has been given in the local time of the client. This ensures that the Gregorian date calculated by the functions is correct regardless of timezone.
 
 ## API
 
@@ -106,19 +98,15 @@ In this library, the Date object has been given in local time of the client. Thi
 
 ## Acknowledgements
 
-I want to thank:
-
 * Guru Sahib, who inspires us into Sikhi.
 
 * Pal Singh Purewal, who explained various concepts in the Bikrami and Nanakshahi Calendars to me and answered my various technical and historical questions. Spent countless hours verifying the calculations done by me.
 
-* E. M. Reingold and N. Dershowitz for their *Calendrical Calculations* book and their mathematical functions, which serve as the base for the Bikrami calculations done in this library.
+* E. M. Reingold and N. Dershowitz for their *Calendrical Calculations* book and their calendar functions, which serve as the base for the movable Gurpurab calculations done in this library.
 
-* My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me find answers to his technical questions.
+* My father, Jasjit Singh, whose curiosity in the Nanakshahi and Bikrami calendar systems inspired me to find answers to his technical questions.
 
 ## Contributing
-
-We're happy to accept suggestions and pull requests!
 
 To get started, clone this repo and run `npm install` inside this directory.
 
@@ -126,15 +114,15 @@ This repository follows the **Airbnb's Javascript Style Guide**, with a few mino
 
 When writing commit messages, please follow the **[Conventional Commits](https://www.conventionalcommits.org)** specification.
 
-Markdown and HTML JSDoc documentation is generated automatically, on commit, however if you'd like to preview any changes to documentation, `npm run build-docs` will update `README.md`. `README.md` should *not* be edited, instead apply modifications to `README.hbs`.
+Markdown and HTML JSDoc documentation is generated automatically, on commit, however, if you'd like to preview any changes to documentation, `npm run build-docs` will update `README.md`. `README.md` should *not* be edited, instead apply modifications to `README.hbs`.
 
 The general workflow for contributing:
 
 - Fork/create a new branch.
 - Write or update existing tests with expected results
 - Implement functions/changes
-- Add JSDoc function documentation and examples.
-- Create a pull request with the changes.
+- Add JSDoc function documentation and examples
+- Create a pull request with the changes
 
 ## License
 

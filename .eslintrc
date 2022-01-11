@@ -1,4 +1,8 @@
 {
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
   "extends": "airbnb-base",
   "root": true,
   "env": {
@@ -9,6 +13,8 @@
   "rules": {
     // Spacing in brackets is consistent and readable
     "array-bracket-spacing": ["error", "always"],
+    // Spacing in brackets is consistent and readable
+    "computed-property-spacing": ["error", "always"],
     // Allow clean function parens
     "arrow-parens": [
       "error",
@@ -17,8 +23,6 @@
         "requireForBlockBody": false
       }
     ],
-    // Spacing in brackets is consistent and readable
-    "computed-property-spacing": ["error", "always"],
     // Spacing in brackets is consistent and readable
     "space-in-parens": [
       "error",
@@ -91,7 +95,11 @@
     // Add new line between imports
     "import/order": "off",
     "sort-imports": "off",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
-    "jest/valid-expect": "error"
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "default-param-last": "off"
   }
 }

@@ -5,7 +5,7 @@
 A JavaScript library to get Nanakshahi dates and Gurpurabs
 
 [![npm](https://img.shields.io/npm/v/nanakshahi.svg?style=flat-square)](https://www.npmjs.com/package/nanakshahi)
-[![GitHub Workflow Status (event)](https://img.shields.io/github/workflow/status/Sarabveer/nanakshahi-js/Continuous%20Integration?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/actions)
+[![GitHub Workflow Status (event)](https://img.shields.io/github/actions/workflow/status/Sarabveer/nanakshahi-js/ci.yml?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/actions)
 [![GitHub license](https://img.shields.io/github/license/Sarabveer/nanakshahi-js.svg?style=flat-square)](./LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/pulls)

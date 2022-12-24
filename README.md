@@ -146,14 +146,14 @@ Converts given Gregorian Date to the corresponding date in the Nanakshahi Calend
 getNanakshahiDate( new Date() )
 ```
 ### findMovableGurpurab(gurpurab, [year])
-Returns Gregorian Date of Movable Gurpurab
+Returns Gregorian Date of Movable Gurpurab from 2003CE - 2100CE
 
 **Returns**: <code>Object</code> - Gurpurab Date with Name in English and Punjabi  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | gurpurab | <code>string</code> | Movable Gurpurabs:<br> `gurunanak` - Parkash Guru Nanak Dev Ji<br> `bandichhorr` - Bandi Chhorr Divas / Diwali<br> `holla` - Holla Mahalla<br> `kabeer` - Birthday Bhagat Kabeer Ji<br> `ravidaas` - Birthday Bhagat Ravidaas Ji<br> `naamdev` - Birthday Bhagat Naamdev Ji |
-| [year] | <code>number</code> | Gregorian year, default is current year. |
+| [year] | <code>number</code> | Gregorian year, default is current year. Range [2003...2100] |
 
 **Example**  
 ```js

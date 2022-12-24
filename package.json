@@ -25,9 +25,6 @@
     "url": "https://github.com/Sarabveer/nanakshahi-js/issues"
   },
   "homepage": "https://github.com/Sarabveer/nanakshahi-js#readme",
-  "dependencies": {
-    "calendrica": "^2.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/eslint-parser": "^7.16.5",

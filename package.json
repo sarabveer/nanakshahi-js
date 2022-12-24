@@ -1,6 +1,6 @@
 {
   "name": "nanakshahi",
-  "version": "8.0.3",
+  "version": "8.1.0",
   "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
   "main": "dist/index.min.js",
   "unpkg": "dist/index.min.js",
@@ -57,6 +57,9 @@
         "dist/index.js",
         "dist/index.min.js"
       ]
+    },
+    "git": {
+      "commitMessage": "chore: release v${version}"
     }
   },
   "keywords": [

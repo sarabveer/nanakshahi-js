@@ -1,6 +1,6 @@
 const { BannerPlugin } = require( 'webpack' )
 const path = require( 'path' )
-const { author, version } = require( './package.json' )
+const { author, license, version } = require( './package.json' )
 
 module.exports = {
   mode: 'production',
@@ -16,7 +16,7 @@ module.exports = {
     minimize: false,
   },
   plugins: [
-    new BannerPlugin( `nanakshahi-js v${version} | ${author} | https://github.com/Sarabveer/nanakshahi-js` ),
+    new BannerPlugin( `nanakshahi-js v${version} | ${author} | ${license} | https://github.com/Sarabveer/nanakshahi-js` ),
   ],
   module: {
     rules: [

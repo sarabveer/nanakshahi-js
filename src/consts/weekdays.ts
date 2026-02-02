@@ -1,4 +1,11 @@
-module.exports = [
+type Weekday = {
+  pa: string
+  paShort: string
+  en: string
+  enShort: string
+}
+
+const weekdays = [
   {
     pa: 'ਐਤਵਾਰ',
     paShort: 'ਐਤ',
@@ -41,4 +48,6 @@ module.exports = [
     en: 'Shanivaar',
     enShort: 'Shani',
   },
-]
+] as const satisfies readonly Weekday[]
+
+export default weekdays

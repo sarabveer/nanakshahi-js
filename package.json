@@ -1,61 +1,63 @@
 {
   "name": "nanakshahi",
-  "version": "8.2.2",
+  "version": "9.0.0",
   "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
-  "main": "dist/index.min.js",
-  "unpkg": "dist/index.min.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
   "runkitExampleFilename": "example.js",
   "scripts": {
-    "test": "jest --coverage",
-    "build": "webpack --config webpack.prod.js",
-    "build-dev": "webpack",
-    "build-docs": "jsdoc2md --partial docs/sig-name.hbs --template docs/README.hbs --files lib/*.js > README.md && markdown-toc -i README.md",
-    "lint": "eslint .",
-    "precommit": "npm run lint && npm run build-docs && git add --renormalize README.md",
+    "build": "bun run build:types && bun run build:esm",
+    "build:esm": "bun build ./index.ts --outdir dist --format=esm",
+    "build:types": "tsc -p tsconfig.build.json",
+    "build-docs": "bun scripts/build-docs.mjs && markdown-toc -i README.md",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "precommit": "bun run typecheck && bun run lint && bun run build-docs && git add --renormalize README.md",
     "release": "release-it",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sarabveer/nanakshahi-js.git"
+    "url": "git+https://github.com/sarabveer/nanakshahi-js.git"
   },
   "author": "Sarabveer Singh <me@sarabveer.me>",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/Sarabveer/nanakshahi-js/issues"
+    "url": "https://github.com/sarabveer/nanakshahi-js/issues"
   },
-  "homepage": "https://github.com/Sarabveer/nanakshahi-js#readme",
+  "homepage": "https://github.com/sarabveer/nanakshahi-js#readme",
   "devDependencies": {
-    "@babel/core": "^7.26.9",
-    "@babel/eslint-parser": "^7.26.8",
-    "@babel/preset-env": "^7.26.9",
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
-    "babel-loader": "^10.0.0",
-    "eslint": "^8.57.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jest": "^28.11.0",
-    "eslint-plugin-require-sort": "^1.3.0",
+    "@biomejs/biome": "^2.3.13",
+    "@commitlint/cli": "^20.4.0",
+    "@commitlint/config-conventional": "^20.4.0",
     "husky": "^9.1.7",
-    "jest": "^29.7.0",
-    "jsdoc-to-markdown": "^8.0.0",
     "markdown-toc": "^1.2.0",
-    "release-it": "^18.1.2",
-    "terser-webpack-plugin": "^5.3.14",
-    "webpack": "^5.98.0",
-    "webpack-cli": "^6.0.1",
-    "webpack-merge": "^6.0.1"
+    "release-it": "^19.2.4",
+    "typedoc": "^0.28.16",
+    "typedoc-plugin-markdown": "^4.9.0",
+    "typescript": "^5.9.3"
   },
   "release-it": {
     "hooks": {
-      "before:release": "npm run build-dev && npm run build"
+      "before:release": "bun run build"
     },
     "github": {
       "release": true,
       "assets": [
-        "dist/index.js",
-        "dist/index.min.js"
+        "dist/index.js"
       ]
     },
     "git": {
@@ -73,8 +75,5 @@
     "gurpurab",
     "gurpurabs",
     "gurmukhi"
-  ],
-  "directories": {
-    "lib": "lib"
-  }
+  ]
 }

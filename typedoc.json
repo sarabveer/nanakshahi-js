@@ -1,0 +1,13 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["index.ts"],
+  "entryPointStrategy": "resolve",
+  "tsconfig": "tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none",
+  "hideGenerator": true,
+  "disableSources": true,
+  "membersWithOwnFile": [],
+  "intentionallyNotExported": ["DateFields", "movableGurpurabKeys"],
+  "parametersFormat": "table"
+}

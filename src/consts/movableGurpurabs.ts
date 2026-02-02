@@ -1,5 +1,26 @@
-module.exports = {
+import type { GurpurabName, MovableGurpurabKey } from '../types'
+
+type MovableGurpurabListItem = {
+  name: GurpurabName
+  dates: { month: number; day: number }[]
+}
+
+export const movableGurpurabKeys = [
+  'ravidaas',
+  'holla',
+  'kabeer',
+  'bandichhorr',
+  'naamdev',
+  'gurunanak',
+] as const satisfies readonly string[]
+
+const movableGurpurabs = {
   bandichhorr: {
+    name: {
+      en: 'Bandi Chhorr Divas',
+      pa: 'ਬੰਦੀ ਛੋੜ ਦਿਵਸ',
+      type: 'historical',
+    },
     dates: [
       { month: 10, day: 25 },
       { month: 11, day: 12 },
@@ -100,13 +121,13 @@ module.exports = {
       { month: 11, day: 12 },
       { month: 11, day: 1 },
     ],
-    name: {
-      en: 'Bandi Chhorr Divas (Diwali)',
-      pa: 'ਬੰਦੀ ਛੋੜ ਦਿਵਸ (ਦੀਵਾਲੀ)',
-      type: 'historical',
-    },
   },
   gurunanak: {
+    name: {
+      en: 'Parkash Sri Guru Nanak Dev Ji',
+      pa: 'ਪ੍ਰਕਾਸ਼ ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ',
+      type: 'gurpurab',
+    },
     dates: [
       { month: 11, day: 8 },
       { month: 11, day: 26 },
@@ -207,13 +228,13 @@ module.exports = {
       { month: 11, day: 27 },
       { month: 11, day: 16 },
     ],
-    name: {
-      en: 'Parkash Sri Guru Nanak Dev Ji',
-      pa: 'ਪ੍ਰਕਾਸ਼ ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ',
-      type: 'gurpurab',
-    },
   },
   holla: {
+    name: {
+      en: 'Holla Mohalla',
+      pa: 'ਹੋਲਾ ਮਹੱਲਾ',
+      type: 'historical',
+    },
     dates: [
       { month: 3, day: 19 },
       { month: 3, day: 7 },
@@ -314,13 +335,13 @@ module.exports = {
       { month: 3, day: 7 },
       { month: 3, day: 26 },
     ],
-    name: {
-      en: 'Holla Mohalla',
-      pa: 'ਹੋਲਾ ਮਹੱਲਾ',
-      type: 'historical',
-    },
   },
   kabeer: {
+    name: {
+      en: 'Birthday Bhagat Kabeer Ji',
+      pa: 'ਜਨਮ ਭਗਤ ਕਬੀਰ ਜੀ',
+      type: 'bhagat',
+    },
     dates: [
       { month: 6, day: 14 },
       { month: 6, day: 3 },
@@ -421,11 +442,6 @@ module.exports = {
       { month: 6, day: 3 },
       { month: 6, day: 22 },
     ],
-    name: {
-      en: 'Birthday Bhagat Kabeer Ji',
-      pa: 'ਜਨਮ ਭਗਤ ਕਬੀਰ ਜੀ',
-      type: 'bhagat',
-    },
   },
   naamdev: {
     dates: [
@@ -535,6 +551,11 @@ module.exports = {
     },
   },
   ravidaas: {
+    name: {
+      en: 'Birthday Bhagat Ravidaas Ji',
+      pa: 'ਜਨਮ ਭਗਤ ਰਵਿਦਾਸ ਜੀ',
+      type: 'bhagat',
+    },
     dates: [
       { month: 2, day: 16 },
       { month: 2, day: 6 },
@@ -635,10 +656,7 @@ module.exports = {
       { month: 2, day: 5 },
       { month: 2, day: 24 },
     ],
-    name: {
-      en: 'Birthday Bhagat Ravidaas Ji',
-      pa: 'ਜਨਮ ਭਗਤ ਰਵਿਦਾਸ ਜੀ',
-      type: 'bhagat',
-    },
   },
-}
+} as const satisfies Record<MovableGurpurabKey, MovableGurpurabListItem>
+
+export default movableGurpurabs

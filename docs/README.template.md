@@ -1,4 +1,4 @@
-<!-- Do not modify README.md, instead modify README.hbs -->
+<!-- Do not modify README.md, instead modify README.template.md -->
 
 # nanakshahi-js
 
@@ -9,7 +9,6 @@ A JavaScript library to get Nanakshahi dates and Gurpurabs
 [![GitHub license](https://img.shields.io/github/license/Sarabveer/nanakshahi-js.svg?style=flat-square)](./LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/pulls)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/nanakshahi/badge)](https://www.jsdelivr.com/package/npm/nanakshahi)
 
 ## Contents
 <!-- toc -->
@@ -24,36 +23,28 @@ Install the library via NPM:
 npm install nanakshahi
 ```
 
-The library can be imported into Node as below:
+The library can be imported into Node as ESM:
 
 ```javascript
-const n = require('nanakshahi')
+import {
+  findMovableGurpurab,
+  getDateFromNanakshahi,
+  getGurpurabsForDate,
+  getGurpurabsForMonth,
+  getNanakshahiDate,
+} from 'nanakshahi'
 
 const date = new Date()
 
-n.getNanakshahiDate( date )
-n.getDateFromNanakshahi( 550, 10, 23 )
-n.getGurpurabsForDay( date )
-n.getGurpurabsForMonth( 1 )
-n.findMovableGurpurab( 'gurunanak' )
+getNanakshahiDate(date)
+getDateFromNanakshahi(550, 10, 23)
+getGurpurabsForDate(date)
+getGurpurabsForMonth(1)
+findMovableGurpurab('gurunanak')
 ```
 
 Want a demo?  
 [![Try on RunKit](https://img.shields.io/badge/Try%20on%20RunKit-nanakshahi-brightgreen.svg?style=flat-square)](https://npm.runkit.com/nanakshahi)
-
-### CDN
-
-Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
-
-```html
-<script src="https://unpkg.com/nanakshahi"></script>
-```
-
-Or via [jsDelivr](https://www.jsdelivr.com/package/npm/nanakshahi)
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/nanakshahi/dist/index.min.js"></script>
-```
 
 ## Notes
 
@@ -71,30 +62,7 @@ In this library, the Date object has been given in the local time of the client.
 
 ## API
 
-{{#globals _name="^get" ~}}
-### {{>sig-name}}
-{{>description~}}
-{{>summary~}}
-{{>default~}}
-{{>returns~}}
-{{>params~}}
-{{>examples~}}
-{{>member-index~}}
-{{>separator~}}
-{{>members~}}
-{{/globals}}
-{{#globals _name="^find" ~}}
-### {{>sig-name}}
-{{>description~}}
-{{>summary~}}
-{{>default~}}
-{{>returns~}}
-{{>params~}}
-{{>examples~}}
-{{>member-index~}}
-{{>separator~}}
-{{>members~}}
-{{/globals}}
+{{template}}
 
 ## Acknowledgements
 

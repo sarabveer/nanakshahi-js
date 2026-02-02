@@ -1,4 +1,4 @@
-<!-- Do not modify README.md, instead modify README.hbs -->
+<!-- Do not modify README.md, instead modify README.template.md -->
 
 # nanakshahi-js
 
@@ -9,7 +9,6 @@ A JavaScript library to get Nanakshahi dates and Gurpurabs
 [![GitHub license](https://img.shields.io/github/license/Sarabveer/nanakshahi-js.svg?style=flat-square)](./LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Sarabveer/nanakshahi-js.svg?style=flat-square)](https://github.com/Sarabveer/nanakshahi-js/pulls)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/nanakshahi/badge)](https://www.jsdelivr.com/package/npm/nanakshahi)
 
 ## Contents
 
@@ -17,16 +16,15 @@ A JavaScript library to get Nanakshahi dates and Gurpurabs
 
 - [Usage](#usage)
   * [NPM](#npm)
-  * [CDN](#cdn)
 - [Notes](#notes)
   * [Nanakshahi Calendar](#nanakshahi-calendar)
   * [JavaScript `Date()` Object](#javascript-date-object)
 - [API](#api)
-  * [getDateFromNanakshahi(year, month, date)](#getdatefromnanakshahiyear-month-date)
-  * [getGurpurabsForDay([gregorianDate])](#getgurpurabsfordaygregoriandate)
-  * [getGurpurabsForMonth(month, [year])](#getgurpurabsformonthmonth-year)
-  * [getNanakshahiDate([gregorianDate])](#getnanakshahidategregoriandate)
-  * [findMovableGurpurab(gurpurab, [year])](#findmovablegurpurabgurpurab-year)
+  * [getNanakshahiDate()](#getnanakshahidate)
+  * [getGurpurabsForMonth()](#getgurpurabsformonth)
+  * [getGurpurabsForDate()](#getgurpurabsfordate)
+  * [getDateFromNanakshahi()](#getdatefromnanakshahi)
+  * [findMovableGurpurab()](#findmovablegurpurab)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 - [License](#license)
@@ -43,36 +41,28 @@ Install the library via NPM:
 npm install nanakshahi
 ```
 
-The library can be imported into Node as below:
+The library can be imported into Node as ESM:
 
 ```javascript
-const n = require('nanakshahi')
+import {
+  findMovableGurpurab,
+  getDateFromNanakshahi,
+  getGurpurabsForDate,
+  getGurpurabsForMonth,
+  getNanakshahiDate,
+} from 'nanakshahi'
 
 const date = new Date()
 
-n.getNanakshahiDate( date )
-n.getDateFromNanakshahi( 550, 10, 23 )
-n.getGurpurabsForDay( date )
-n.getGurpurabsForMonth( 1 )
-n.findMovableGurpurab( 'gurunanak' )
+getNanakshahiDate(date)
+getDateFromNanakshahi(550, 10, 23)
+getGurpurabsForDate(date)
+getGurpurabsForMonth(1)
+findMovableGurpurab('gurunanak')
 ```
 
 Want a demo?  
 [![Try on RunKit](https://img.shields.io/badge/Try%20on%20RunKit-nanakshahi-brightgreen.svg?style=flat-square)](https://npm.runkit.com/nanakshahi)
-
-### CDN
-
-Additionally, the package is available for web use via [unpkg CDN](https://unpkg.com/nanakshahi).
-
-```html
-<script src="https://unpkg.com/nanakshahi"></script>
-```
-
-Or via [jsDelivr](https://www.jsdelivr.com/package/npm/nanakshahi)
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/nanakshahi/dist/index.min.js"></script>
-```
 
 ## Notes
 
@@ -90,75 +80,152 @@ In this library, the Date object has been given in the local time of the client.
 
 ## API
 
-### getDateFromNanakshahi(year, month, date)
-Converts Nanakshahi Date into the Gregorian Calendar
+### getNanakshahiDate()
 
-**Returns**: <code>Object</code> - Gregorian Date + Nanakshahi Date in English and Punjabi  
+> **getNanakshahiDate**(`gregorianDate`): [`NanakshahiDate`](#nanakshahidate)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| year | <code>number</code> | Nanakshahi Year |
-| month | <code>number</code> | Nanakshahi Month, 1-12 |
-| date | <code>number</code> | Nanakshahi Day |
+Converts a Gregorian date to the corresponding Nanakshahi date.
 
-**Example**  
-```js
-getDateFromNanakshahi( 550, 10, 23 )
+**Parameters**
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `gregorianDate` | `Date` | JavaScript Date object (default: current date). |
+
+**Returns**
+
+[`NanakshahiDate`](#nanakshahidate)
+
+Nanakshahi date in English and Punjabi.
+
+
+**Example**
+
+```ts
+getNanakshahiDate(new Date())
 ```
-### getGurpurabsForDay([gregorianDate])
-Returns all Gurpurabs for a Date
+### getGurpurabsForMonth()
 
-**Returns**: <code>Array</code> - Gurpurabs for the day with Date and name in English and Punjabi  
+> **getGurpurabsForMonth**(`month`, `year`): [`GurpurabsForMonth`](#gurpurabsformonth)
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [gregorianDate] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
+Returns all Gurpurabs for a Nanakshahi month.
 
-**Example**  
-```js
-getGurpurabsForDay( new Date() )
+**Parameters**
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `month` | `number` | Nanakshahi month (1-12). |
+| `year` | `number` | Nanakshahi year (default: current Nanakshahi year). |
+
+**Returns**
+
+[`GurpurabsForMonth`](#gurpurabsformonth)
+
+Gurpurab list for the month with Gregorian and localized date fields.
+
+
+
+**Example**
+
+```ts
+getGurpurabsForMonth(1)
 ```
-### getGurpurabsForMonth(month, [year])
-Returns all Gurpurabs for a Nanakshahi Month
 
-**Returns**: <code>Object</code> - Gurpurabs for the month with Date and name in English and Punjabi  
+***
 
-| Param | Type | Description |
-| --- | --- | --- |
-| month | <code>number</code> | Nanakshahi Month, 1-12 |
-| [year] | <code>number</code> | Nanakshahi Year. Default is current Nanakshahi Year. |
+### getGurpurabsForDate()
 
-**Example**  
-```js
-getGurpurabsForMonth( 1 )
+> **getGurpurabsForDate**(`gregorianDate`): [`GurpurabName`](#gurpurabname)[]
+
+Returns all Gurpurabs that fall on a Gregorian date.
+
+**Parameters**
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `gregorianDate` | `Date` | JavaScript Date object (default: current date). |
+
+**Returns**
+
+[`GurpurabName`](#gurpurabname)[]
+
+Gurpurabs for the day with name fields in English and Punjabi.
+
+
+**Example**
+
+```ts
+getGurpurabsForDate(new Date())
 ```
-### getNanakshahiDate([gregorianDate])
-Converts given Gregorian Date to the corresponding date in the Nanakshahi Calendar
 
-**Returns**: <code>Object</code> - Nanakshahi Date in English and Punjabi  
+***
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [gregorianDate] | <code>Object</code> | <code>new Date()</code> | JavaScript Date() Object |
+### getDateFromNanakshahi()
 
-**Example**  
-```js
-getNanakshahiDate( new Date() )
+> **getDateFromNanakshahi**(`year`, `month`, `date`): [`NanakshahiDate`](#nanakshahidate)
+
+Converts a Nanakshahi date into its Gregorian equivalent.
+
+**Parameters**
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `year` | `number` | Nanakshahi year. |
+| `month` | `number` | Nanakshahi month (1-12). |
+| `date` | `number` | Nanakshahi day. |
+
+**Returns**
+
+[`NanakshahiDate`](#nanakshahidate)
+
+Gregorian date plus Nanakshahi date in English and Punjabi.
+
+
+
+**Example**
+
+```ts
+getDateFromNanakshahi(550, 10, 23)
 ```
-### findMovableGurpurab(gurpurab, [year])
-Returns Gregorian Date of Movable Gurpurab from 2003CE - 2100CE
 
-**Returns**: <code>Object</code> - Gurpurab Date with Name in English and Punjabi  
+***
 
-| Param | Type | Description |
-| --- | --- | --- |
-| gurpurab | <code>string</code> | Movable Gurpurabs:<br> `gurunanak` - Parkash Guru Nanak Dev Ji<br> `bandichhorr` - Bandi Chhorr Divas / Diwali<br> `holla` - Holla Mahalla<br> `kabeer` - Birthday Bhagat Kabeer Ji<br> `ravidaas` - Birthday Bhagat Ravidaas Ji<br> `naamdev` - Birthday Bhagat Naamdev Ji |
-| [year] | <code>number</code> | Gregorian year, default is current year. Range [2003...2100] |
+### findMovableGurpurab()
 
-**Example**  
-```js
-findMovableGurpurab( 'gurunanak' )
+> **findMovableGurpurab**(`gurpurab`, `year`): [`MovableGurpurab`](#movablegurpurab)
+
+Returns Gregorian date info for a movable Gurpurab between 2003 CE and 2100 CE.
+
+Supported keys:
+- `gurunanak` - Parkash Guru Nanak Dev Ji
+- `bandichhorr` - Bandi Chhorr Divas
+- `holla` - Holla Mahalla
+- `kabeer` - Birthday Bhagat Kabeer Ji
+- `ravidaas` - Birthday Bhagat Ravidaas Ji
+- `naamdev` - Birthday Bhagat Naamdev Ji
+
+**Parameters**
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `gurpurab` | `"ravidaas"` \| `"holla"` \| `"kabeer"` \| `"bandichhorr"` \| `"naamdev"` \| `"gurunanak"` | Movable Gurpurab key. |
+| `year` | `number` | Gregorian year (default: current year, range: 2003...2100). |
+
+**Returns**
+
+[`MovableGurpurab`](#movablegurpurab)
+
+Gurpurab date and localized name fields.
+
+
+
+**Example**
+
+```ts
+findMovableGurpurab('gurunanak')
 ```
+
+***
 
 ## Acknowledgements
 

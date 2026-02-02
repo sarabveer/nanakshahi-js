@@ -1,10 +1,19 @@
-module.exports = {
+import type { GurpurabName } from '../types'
+
+type GurpurabCalendarEntry = {
+  date: number
+  gurpurabs: ReadonlyArray<GurpurabName>
+}
+
+type GurpurabCalendar = Readonly<Record<number, ReadonlyArray<GurpurabCalendarEntry>>>
+
+const gurpurabs = {
   1: [
     {
       date: 1,
       gurpurabs: [
         {
-          pa: 'ਅਰੰਭ ਨਵਾਂ ਸਾਲ',
+          pa: 'ਅਰੰਭ ਨਵਾਂ ਨਾਨਕਸ਼ਾਹੀ ਸਾਲ',
           en: 'Nanakshahi New Year',
           type: 'calendar',
         },
@@ -918,4 +927,6 @@ module.exports = {
       ],
     },
   ],
-}
+} as const satisfies GurpurabCalendar
+
+export default gurpurabs

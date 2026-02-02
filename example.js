@@ -1,9 +1,15 @@
-const n = require( 'nanakshahi' )
+import {
+  findMovableGurpurab,
+  getDateFromNanakshahi,
+  getGurpurabsForDate,
+  getGurpurabsForMonth,
+  getNanakshahiDate,
+} from 'nanakshahi'
 
 const date = new Date()
 
-console.log( n.getNanakshahiDate( date ) )
-console.log( n.getDateFromNanakshahi( 550, 10, 23 ) )
-console.log( n.getGurpurabsForDay( date ) )
-console.log( n.getGurpurabsForMonth( 1 ) )
-console.log( n.findMovableGurpurab( 'gurunanak' ) )
+console.log(getNanakshahiDate(date))
+console.log(getDateFromNanakshahi(550, 10, 23))
+console.log(getGurpurabsForDate(date))
+console.log(getGurpurabsForMonth(1))
+console.log(findMovableGurpurab('gurunanak'))

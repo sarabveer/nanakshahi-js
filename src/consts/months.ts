@@ -1,4 +1,4 @@
-module.exports = [
+const months = [
   {
     pa: 'ਚੇਤ',
     en: 'Chet',
@@ -47,4 +47,6 @@ module.exports = [
     pa: 'ਫੱਗਣ',
     en: 'Phagun',
   },
-]
+] as const satisfies ReadonlyArray<{ pa: string; en: string }>
+
+export default months

@@ -1,4 +1,5 @@
-const { findMovableGurpurab } = require( '../index' )
+import { describe, expect, it } from 'bun:test'
+import { findMovableGurpurab } from '../index.ts'
 
 /*
   Movable Dates of Gurpurbs (Change Every Year)
@@ -7,9 +8,11 @@ const { findMovableGurpurab } = require( '../index' )
 */
 
 // Range from 2003 - 2020
-const years = Array( 18 ).fill( 0 ).map( ( _, i ) => i + 2003 )
+const years = Array(18)
+  .fill(0)
+  .map((_, i) => i + 2003)
 
-describe( "findMovableGurpurab( 'gurunanak' )", () => {
+describe("findMovableGurpurab( 'gurunanak' )", () => {
   const results = [
     { month: 11, date: 8 },
     { month: 11, date: 26 },
@@ -31,17 +34,16 @@ describe( "findMovableGurpurab( 'gurunanak' )", () => {
     { month: 11, date: 30 },
   ]
 
-  const data = years.map( ( year, i ) => [
-    year,
-    ( new Date( year, results[ i ].month - 1, results[ i ].date ) ),
-  ] )
+  const data = years.map((year, i) => [year, new Date(year, results[i].month - 1, results[i].date)])
 
-  data.map( ( [ year, result ] ) => it( `Output of findMovableGurpurab( 'gurunanak', ${year} ) should be: '${result}'`, () => {
-    expect( findMovableGurpurab( 'gurunanak', year ).gregorianDate ).toEqual( result )
-  } ) )
-} )
+  data.map(([year, result]) =>
+    it(`Output of fn( 'gurunanak', ${year} ) should be: '${result}'`, () => {
+      expect(findMovableGurpurab('gurunanak', year).gregorianDate).toEqual(result)
+    }),
+  )
+})
 
-describe( "findMovableGurpurab( 'holla' )", () => {
+describe("findMovableGurpurab( 'holla' )", () => {
   const results = [
     { month: 3, date: 19 },
     { month: 3, date: 7 },
@@ -63,17 +65,16 @@ describe( "findMovableGurpurab( 'holla' )", () => {
     { month: 3, date: 10 },
   ]
 
-  const data = years.map( ( year, i ) => [
-    year,
-    ( new Date( year, results[ i ].month - 1, results[ i ].date ) ),
-  ] )
+  const data = years.map((year, i) => [year, new Date(year, results[i].month - 1, results[i].date)])
 
-  data.map( ( [ year, result ] ) => it( `Output of findMovableGurpurab( 'holla', ${year} ) should be: '${result}'`, () => {
-    expect( findMovableGurpurab( 'holla', year ).gregorianDate ).toEqual( result )
-  } ) )
-} )
+  data.map(([year, result]) =>
+    it(`Output of fn( 'holla', ${year} ) should be: '${result}'`, () => {
+      expect(findMovableGurpurab('holla', year).gregorianDate).toEqual(result)
+    }),
+  )
+})
 
-describe( "findMovableGurpurab( 'bandichhorr' )", () => {
+describe("findMovableGurpurab( 'bandichhorr' )", () => {
   const results = [
     { month: 10, date: 25 },
     { month: 11, date: 12 },
@@ -95,12 +96,11 @@ describe( "findMovableGurpurab( 'bandichhorr' )", () => {
     { month: 11, date: 14 },
   ]
 
-  const data = years.map( ( year, i ) => [
-    year,
-    ( new Date( year, results[ i ].month - 1, results[ i ].date ) ),
-  ] )
+  const data = years.map((year, i) => [year, new Date(year, results[i].month - 1, results[i].date)])
 
-  data.map( ( [ year, result ] ) => it( `Output of findMovableGurpurab( 'bandichhorr', ${year} ) should be: '${result}'`, () => {
-    expect( findMovableGurpurab( 'bandichhorr', year ).gregorianDate ).toEqual( result )
-  } ) )
-} )
+  data.map(([year, result]) =>
+    it(`Output of fn( 'bandichhorr', ${year} ) should be: '${result}'`, () => {
+      expect(findMovableGurpurab('bandichhorr', year).gregorianDate).toEqual(result)
+    }),
+  )
+})

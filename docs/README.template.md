@@ -43,9 +43,6 @@ getGurpurabsForMonth(1)
 findMovableGurpurab('gurunanak')
 ```
 
-Want a demo?  
-[![Try on RunKit](https://img.shields.io/badge/Try%20on%20RunKit-nanakshahi-brightgreen.svg?style=flat-square)](https://npm.runkit.com/nanakshahi)
-
 ## Notes
 
 ### Nanakshahi Calendar

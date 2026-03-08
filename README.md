@@ -61,9 +61,6 @@ getGurpurabsForMonth(1)
 findMovableGurpurab('gurunanak')
 ```
 
-Want a demo?  
-[![Try on RunKit](https://img.shields.io/badge/Try%20on%20RunKit-nanakshahi-brightgreen.svg?style=flat-square)](https://npm.runkit.com/nanakshahi)
-
 ## Notes
 
 ### Nanakshahi Calendar
@@ -82,7 +79,7 @@ In this library, the Date object has been given in the local time of the client.
 
 ### getNanakshahiDate()
 
-> **getNanakshahiDate**(`gregorianDate`): [`NanakshahiDate`](#nanakshahidate)
+> **getNanakshahiDate**(`gregorianDate?`): [`NanakshahiDate`](#nanakshahidate)
 
 Converts a Gregorian date to the corresponding Nanakshahi date.
 
@@ -106,7 +103,7 @@ getNanakshahiDate(new Date())
 ```
 ### getGurpurabsForMonth()
 
-> **getGurpurabsForMonth**(`month`, `year`): [`GurpurabsForMonth`](#gurpurabsformonth)
+> **getGurpurabsForMonth**(`month`, `year?`): [`GurpurabsForMonth`](#gurpurabsformonth)
 
 Returns all Gurpurabs for a Nanakshahi month.
 
@@ -135,7 +132,7 @@ getGurpurabsForMonth(1)
 
 ### getGurpurabsForDate()
 
-> **getGurpurabsForDate**(`gregorianDate`): [`GurpurabName`](#gurpurabname)[]
+> **getGurpurabsForDate**(`gregorianDate?`): [`GurpurabName`](#gurpurabname)[]
 
 Returns all Gurpurabs that fall on a Gregorian date.
 
@@ -192,7 +189,7 @@ getDateFromNanakshahi(550, 10, 23)
 
 ### findMovableGurpurab()
 
-> **findMovableGurpurab**(`gurpurab`, `year`): [`MovableGurpurab`](#movablegurpurab)
+> **findMovableGurpurab**(`gurpurab`, `year?`): [`MovableGurpurab`](#movablegurpurab)
 
 Returns Gregorian date info for a movable Gurpurab between 2003 CE and 2100 CE.
 

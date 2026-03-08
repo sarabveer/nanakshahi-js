@@ -19,5 +19,5 @@
     "noEmit": true,
     "lib": ["es2022"]
   },
-  "include": ["index.ts", "src/**/*.ts"]
+  "include": ["*.ts", "src/**/*.ts"]
 }

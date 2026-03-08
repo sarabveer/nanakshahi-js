@@ -1,4 +1,5 @@
 import {
+  consts,
   findMovableGurpurab,
   getDateFromNanakshahi,
   getGurpurabsForDate,
@@ -12,6 +13,7 @@ const nanakshahi = {
   getGurpurabsForDate,
   getGurpurabsForMonth,
   getNanakshahiDate,
+  consts,
 }
 
 ;(globalThis as { nanakshahi?: typeof nanakshahi }).nanakshahi = nanakshahi

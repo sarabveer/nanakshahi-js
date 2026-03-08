@@ -4,6 +4,9 @@
   "description": "A JavaScript Library to get Nanakshahi Dates and Gurpurabs",
   "type": "module",
   "main": "dist/index.js",
+  "browser": "dist/browser.js",
+  "unpkg": "dist/browser.min.js",
+  "jsdelivr": "dist/browser.min.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
@@ -16,10 +19,11 @@
     "README.md",
     "LICENSE.md"
   ],
-  "runkitExampleFilename": "example.js",
   "scripts": {
-    "build": "bun run build:types && bun run build:esm",
-    "build:esm": "bun build ./index.ts --outdir dist --format=esm",
+    "build": "bun run build:types && bun run build:esm && bun run build:browser && bun run build:browser:min",
+    "build:esm": "bun build ./index.ts --outdir dist --format=esm --target=node",
+    "build:browser": "bun build ./browser.ts --outfile dist/browser.js --format=iife --target=browser",
+    "build:browser:min": "bun build ./browser.ts --outfile dist/browser.min.js --format=iife --target=browser --minify",
     "build:types": "tsc -p tsconfig.build.json",
     "build-docs": "bun scripts/build-docs.mjs && markdown-toc -i README.md",
     "typecheck": "tsc -p tsconfig.json --noEmit",
@@ -40,14 +44,14 @@
   },
   "homepage": "https://github.com/sarabveer/nanakshahi-js#readme",
   "devDependencies": {
-    "@biomejs/biome": "^2.3.13",
-    "@commitlint/cli": "^20.4.0",
-    "@commitlint/config-conventional": "^20.4.0",
+    "@biomejs/biome": "^2.4.6",
+    "@commitlint/cli": "^20.4.3",
+    "@commitlint/config-conventional": "^20.4.3",
     "husky": "^9.1.7",
     "markdown-toc": "^1.2.0",
     "release-it": "^19.2.4",
-    "typedoc": "^0.28.16",
-    "typedoc-plugin-markdown": "^4.9.0",
+    "typedoc": "^0.28.17",
+    "typedoc-plugin-markdown": "^4.10.0",
     "typescript": "^5.9.3"
   },
   "release-it": {
@@ -57,7 +61,9 @@
     "github": {
       "release": true,
       "assets": [
-        "dist/index.js"
+        "dist/index.js",
+        "dist/browser.js",
+        "dist/browser.min.js"
       ]
     },
     "git": {

@@ -78,8 +78,8 @@ const validateNanakshahiDateInput = (year: number, month: number, date: number):
 }
 
 export {
-  assertNanakshahiYear,
   assertNanakshahiMonth,
+  assertNanakshahiYear,
   getMaxDateForNanakshahiMonth,
   validateNanakshahiDateInput,
 }

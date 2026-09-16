@@ -73,13 +73,13 @@ In this library, the Date object has been given in the local time of the client.
 
 ## Contributing
 
-To get started, clone this repo and run `npm install` inside this directory.
+To get started, install Bun and Node.js 24 LTS, clone this repo, and run `bun install --frozen-lockfile` inside this directory. Node.js is used by the development and release tools.
 
-This repository follows the **Airbnb's Javascript Style Guide**, with a few minor modifications. Notably, spaces should be included inside parentheses and brackets (weird, right!). An ESLint file is provided, and your code will automatically be checked on-commit for style. It is recommended to install an ESLint plugin for your editor (VS Code's `ESLint` plugin works out of the box), so you can receive linter suggestions as you type.
+This repository uses **Biome** for formatting and linting, configured in `biome.json`. Run `bun run lint` to check your code or `bun run format` to apply fixes. Type checking and linting also run automatically on commit. The Biome editor extension can provide suggestions as you type.
 
 When writing commit messages, please follow the **[Conventional Commits](https://www.conventionalcommits.org)** specification.
 
-Markdown and HTML JSDoc documentation is generated automatically, on commit, however, if you'd like to preview any changes to documentation, `npm run build-docs` will update `README.md`. `README.md` should *not* be edited, instead apply modifications to `README.hbs`.
+Markdown API documentation is generated with TypeDoc automatically on commit. Run `bun run build-docs` to preview documentation changes. `README.md` should *not* be edited directly; update `docs/README.template.md` or the source documentation comments instead.
 
 The general workflow for contributing:
 
